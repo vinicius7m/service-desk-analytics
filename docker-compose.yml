@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   gerar-dados:
     build: .
@@ -14,4 +16,6 @@ services:
       - ./keys:/app/keys
     environment:
       - GOOGLE_APPLICATION_CREDENTIALS=/app/keys/credentials.json
+    depends_on:
+      - gerar-dados
     command: python upload_bigquery.py

@@ -12,7 +12,7 @@ fake = Faker("pt_BR")
 Faker.seed(42)
 
 # ---------- Configurações ----------
-n_registros = 100
+n_registros = 600
 
 canais = ["WhatsApp", "Telefone", "Chat", "E-mail"]
 canais_probs = [0.4, 0.3, 0.2, 0.1]  # Soma = 1.0

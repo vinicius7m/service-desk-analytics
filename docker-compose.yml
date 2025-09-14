@@ -1,0 +1,17 @@
+services:
+  gerar-dados:
+    build: .
+    container_name: gerar_chamados
+    volumes:
+      - ./python/data:/app/data
+    command: python gerar_chamados.py
+
+  upload-bq:
+    build: .
+    container_name: upload_chamados
+    volumes:
+      - ./python/data:/app/data
+      - ./keys:/app/keys
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/keys/credentials.json
+    command: python upload_bigquery.py

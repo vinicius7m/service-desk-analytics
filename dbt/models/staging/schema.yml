@@ -1,0 +1,36 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Schema raw com tabelas brutas carregadas do ELT"
+    schema: "{{ env_var('BQ_DATASET_RAW') }}"
+    tables:
+      - name: chamados
+        description: "Tabela de chamados carregada do CSV"
+
+models:
+  - name: stg_chamados
+    description: "Tabela staging de chamados com limpeza básica"
+    columns:
+      - name: id_chamado
+        description: "ID único do chamado"
+        tests:
+          - unique
+          - not_null
+          
+      - name: data_abertura
+        description: "Data e hora de abertura do chamado"
+        tests:
+          - not_null
+          
+      - name: categoria
+        description: "Categoria do chamado (padronizada)"
+        tests:
+          - accepted_values:
+              values: ['FINANCEIRO', 'TÉCNICO', 'CADASTRO', 'OUTROS']
+              
+      - name: csat_score
+        description: "Score de satisfação (1-5)"
+        tests:
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]

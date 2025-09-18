@@ -19,3 +19,14 @@ services:
     depends_on:
       - gerar-dados
     command: python upload_bigquery.py
+
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-bigquery:1.8.0
+    container_name: dbt_transform
+    volumes:
+      - ./dbt:/usr/app/dbt
+      - ./keys:/usr/app/keys
+    working_dir: /usr/app/dbt
+    env_file:
+      - .env
+    command: ["run", "--target", "prod"]

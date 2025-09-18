@@ -1,0 +1,13 @@
+service_desk_analytics:
+  target: prod
+  outputs:
+    prod:
+      type: bigquery
+      method: service-account
+      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS') }}"
+      project: "{{ env_var('BQ_PROJECT') }}"
+      dataset: "{{ env_var('BQ_DATASET_RAW') }}"   # base = raw
+      threads: 4
+      timeout_seconds: 300
+      location: us-central1
+      priority: interactive

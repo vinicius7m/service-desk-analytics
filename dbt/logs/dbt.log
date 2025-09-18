@@ -1,0 +1,2011 @@
+[0m00:56:13.550719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd605ea410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd605e9fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd605eb2d0>]}
+
+
+============================== 00:56:13.591566 | 1387377d-1fc3-43c7-b796-0ecc7b0861ac ==============================
+[0m00:56:13.591566 [info ] [MainThread]: Running with dbt=1.8.0
+[0m00:56:13.597719 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/usr/app/dbt/logs', 'version_check': 'True', 'profiles_dir': '/usr/app/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --target prod', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:56:18.924488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1387377d-1fc3-43c7-b796-0ecc7b0861ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3e5b8250>]}
+[0m00:56:19.106119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1387377d-1fc3-43c7-b796-0ecc7b0861ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd6231ff50>]}
+[0m00:56:19.109817 [info ] [MainThread]: Registered adapter: bigquery=1.8.0
+[0m00:56:19.160936 [debug] [MainThread]: checksum: b3c56ae100510f69e3c5cb21de5a14a249b030b632caca0456cb9cfa1123b0a0, vars: {}, profile: , target: prod, version: 1.8.0
+[0m00:56:19.171460 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:56:19.175009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1387377d-1fc3-43c7-b796-0ecc7b0861ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3e1e55d0>]}
+[0m00:56:24.571150 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m00:56:24.577546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1387377d-1fc3-43c7-b796-0ecc7b0861ac', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3df2dcd0>]}
+[0m00:56:26.443872 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.service_desk_analytics.stg_chamados' (models/staging/stg_chamados.sql) depends on a source named 'raw.chamados' which was not found
+[0m00:56:26.452346 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 13.057933, "process_user_time": 23.318277, "process_kernel_time": 4.468115, "process_mem_max_rss": "208484", "process_in_blocks": "320", "process_out_blocks": "1390", "command_success": false}
+[0m00:56:26.458842 [debug] [MainThread]: Command `dbt run` failed at 00:56:26.457427 after 13.07 seconds
+[0m00:56:26.464055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd6040ad50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3dd88a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd3dd86150>]}
+[0m00:56:26.467931 [debug] [MainThread]: Flushing usage events
+[0m01:00:22.814950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f4eb2f290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f4eef3d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f4e96cfd0>]}
+
+
+============================== 01:00:22.823553 | f85b50cc-53db-47be-b037-4c5f50f9c1a1 ==============================
+[0m01:00:22.823553 [info ] [MainThread]: Running with dbt=1.8.0
+[0m01:00:22.824897 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/usr/app/dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/usr/app/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --target prod', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:00:23.941485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f85b50cc-53db-47be-b037-4c5f50f9c1a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f30c4e910>]}
+[0m01:00:23.994141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f85b50cc-53db-47be-b037-4c5f50f9c1a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f3050df10>]}
+[0m01:00:23.995435 [info ] [MainThread]: Registered adapter: bigquery=1.8.0
+[0m01:00:24.011845 [debug] [MainThread]: checksum: b3c56ae100510f69e3c5cb21de5a14a249b030b632caca0456cb9cfa1123b0a0, vars: {}, profile: , target: prod, version: 1.8.0
+[0m01:00:24.014252 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:00:24.015638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f85b50cc-53db-47be-b037-4c5f50f9c1a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f30501c50>]}
+[0m01:00:25.173514 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m01:00:25.174755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f85b50cc-53db-47be-b037-4c5f50f9c1a1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f3046e110>]}
+[0m01:00:25.492949 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.service_desk_analytics.marts
+- models.service_desk_analytics.intermediate
+[0m01:00:25.508415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f85b50cc-53db-47be-b037-4c5f50f9c1a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f3011d390>]}
+[0m01:00:25.642715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f85b50cc-53db-47be-b037-4c5f50f9c1a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f30032490>]}
+[0m01:00:25.643555 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 469 macros
+[0m01:00:25.644493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f85b50cc-53db-47be-b037-4c5f50f9c1a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f302915d0>]}
+[0m01:00:25.646759 [info ] [MainThread]: 
+[0m01:00:25.647870 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m01:00:25.649635 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_meu_project_id'
+[0m01:00:25.650557 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:00:26.628224 [debug] [ThreadPool]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest("GET https://bigquery.googleapis.com/bigquery/v2/projects/meu_project_id/datasets?maxResults=10000&prettyPrint=false: Invalid project ID 'meu_project_id'. Project IDs must contain 6-63 lowercase letters, digits, or dashes. Some project IDs also include domain name separated by a colon. IDs must start with a letter and may not end with a dash.")
+[0m01:00:27.406040 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:00:27.408334 [debug] [MainThread]: Connection 'list_meu_project_id' was properly closed.
+[0m01:00:27.410607 [info ] [MainThread]: 
+[0m01:00:27.413527 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.76 seconds (1.76s).
+[0m01:00:27.418003 [error] [MainThread]: Encountered an error:
+Database Error
+  Invalid project ID 'meu_project_id'. Project IDs must contain 6-63 lowercase letters, digits, or dashes. Some project IDs also include domain name separated by a colon. IDs must start with a letter and may not end with a dash.
+[0m01:00:27.422479 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 4.663014, "process_user_time": 5.032984, "process_kernel_time": 1.426302, "process_mem_max_rss": "212460", "process_out_blocks": "3301", "command_success": false, "process_in_blocks": "0"}
+[0m01:00:27.424563 [debug] [MainThread]: Command `dbt run` failed at 01:00:27.424284 after 4.67 seconds
+[0m01:00:27.425817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f4e96db90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f52341210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f302ff9d0>]}
+[0m01:00:27.430655 [debug] [MainThread]: Flushing usage events
+[0m01:01:56.926267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10048619d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1004d6ca50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10048623d0>]}
+
+
+============================== 01:01:56.934160 | 4eea92d4-3e25-4cac-a214-dcfb4dc3644e ==============================
+[0m01:01:56.934160 [info ] [MainThread]: Running with dbt=1.8.0
+[0m01:01:56.935287 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app/dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/usr/app/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --target prod', 'send_anonymous_usage_stats': 'True'}
+[0m01:01:58.033995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4eea92d4-3e25-4cac-a214-dcfb4dc3644e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe25422d0>]}
+[0m01:01:58.084617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4eea92d4-3e25-4cac-a214-dcfb4dc3644e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f100676bf90>]}
+[0m01:01:58.085771 [info ] [MainThread]: Registered adapter: bigquery=1.8.0
+[0m01:01:58.100804 [debug] [MainThread]: checksum: b3c56ae100510f69e3c5cb21de5a14a249b030b632caca0456cb9cfa1123b0a0, vars: {}, profile: , target: prod, version: 1.8.0
+[0m01:01:58.210999 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m01:01:58.212122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4eea92d4-3e25-4cac-a214-dcfb4dc3644e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1005fdcb10>]}
+[0m01:01:59.381905 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m01:01:59.383325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '4eea92d4-3e25-4cac-a214-dcfb4dc3644e', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe252e490>]}
+[0m01:01:59.741872 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.service_desk_analytics.intermediate
+- models.service_desk_analytics.marts
+[0m01:01:59.759734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4eea92d4-3e25-4cac-a214-dcfb4dc3644e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe2457a50>]}
+[0m01:01:59.920420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4eea92d4-3e25-4cac-a214-dcfb4dc3644e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe1960e90>]}
+[0m01:01:59.921393 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 469 macros
+[0m01:01:59.922370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4eea92d4-3e25-4cac-a214-dcfb4dc3644e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe1d6ead0>]}
+[0m01:01:59.925232 [info ] [MainThread]: 
+[0m01:01:59.926683 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m01:01:59.930687 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m01:01:59.932223 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:02:00.877290 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now create_service-desk-analytics-472019_raw_staging)
+[0m01:02:00.879658 [debug] [ThreadPool]: Creating schema "database: "service-desk-analytics-472019"
+schema: "raw_staging"
+"
+[0m01:02:00.902012 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:02:00.906766 [debug] [ThreadPool]: On create_service-desk-analytics-472019_raw_staging: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "connection_name": "create_service-desk-analytics-472019_raw_staging"} */
+create schema if not exists `service-desk-analytics-472019`.`raw_staging`
+  
+[0m01:02:02.069513 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:US:ceea99eb-e79c-4946-ad1c-349b55836ea4&page=queryresults
+[0m01:02:03.188918 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_service-desk-analytics-472019_raw_staging, now list_service-desk-analytics-472019_raw_staging)
+[0m01:02:03.191375 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:02:04.312720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4eea92d4-3e25-4cac-a214-dcfb4dc3644e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe2543590>]}
+[0m01:02:04.315016 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m01:02:04.317458 [info ] [MainThread]: 
+[0m01:02:04.353969 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.stg_chamados
+[0m01:02:04.356711 [info ] [Thread-1 (]: 1 of 1 START sql view model raw_staging.stg_chamados ........................... [RUN]
+[0m01:02:04.359892 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_staging, now model.service_desk_analytics.stg_chamados)
+[0m01:02:04.362167 [debug] [Thread-1 (]: Began compiling node model.service_desk_analytics.stg_chamados
+[0m01:02:04.381323 [debug] [Thread-1 (]: Writing injected SQL for node "model.service_desk_analytics.stg_chamados"
+[0m01:02:04.390916 [debug] [Thread-1 (]: Began executing node model.service_desk_analytics.stg_chamados
+[0m01:02:04.425715 [debug] [Thread-1 (]: Writing runtime sql for node "model.service_desk_analytics.stg_chamados"
+[0m01:02:04.429722 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:02:04.432352 [debug] [Thread-1 (]: On model.service_desk_analytics.stg_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.stg_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_staging`.`stg_chamados`
+  OPTIONS()
+  as 
+
+WITH raw_data AS (
+    SELECT * FROM `service-desk-analytics-472019`.`raw`.`chamados`
+),
+
+cleaned AS (
+    SELECT
+        -- IDs e Datas (validação básica)
+        id_chamado,
+        CAST(data_abertura AS TIMESTAMP) AS data_abertura,
+        CAST(data_fechamento AS TIMESTAMP) AS data_fechamento,
+        
+        -- Categorias (padronização)
+        UPPER(TRIM(categoria)) AS categoria,
+        INITCAP(TRIM(canal)) AS canal,
+        
+        -- Prioridade (tratamento de nulos e padronização)
+        CASE 
+            WHEN prioridade IS NULL THEN 'NÃO_INFORMADA'
+            ELSE INITCAP(TRIM(prioridade))
+        END AS prioridade,
+        
+        -- Status (validação)
+        CASE 
+            WHEN status IN ('Aberto', 'Em andamento', 'Fechado') THEN status
+            ELSE 'STATUS_DESCONHECIDO'
+        END AS status,
+        
+        -- Métricas numéricas (tratamento de outliers)
+        CAST(tempo_espera AS NUMERIC) AS tempo_espera_minutos,
+        CAST(tempo_resolucao AS NUMERIC) AS tempo_resolucao_horas,
+        
+        -- CSAT (valores válidos 1-5, nulos tratados)
+        CASE 
+            WHEN csat BETWEEN 1 AND 5 THEN csat
+            ELSE NULL
+        END AS csat_score,
+        
+        -- Flags booleanas (garantir consistência)
+        CAST(sla_atingido AS BOOLEAN) AS is_sla_atingido,
+        CAST(first_contact_resolution AS BOOLEAN) AS is_first_contact,
+        
+        -- Metadados para qualidade
+        CURRENT_TIMESTAMP() AS dbt_loaded_at
+
+    FROM raw_data
+)
+
+SELECT * FROM cleaned;
+
+
+[0m01:02:05.570157 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:US:2e0fe596-a1df-4db4-a11c-6d94617d0871&page=queryresults
+[0m01:02:05.571608 [debug] [Thread-1 (]: BigQuery adapter: Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.stg_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_staging`.`stg_chamados`
+  OPTIONS()
+  as 
+
+WITH raw_data AS (
+    SELECT * FROM `service-desk-analytics-472019`.`raw`.`chamados`
+),
+
+cleaned AS (
+    SELECT
+        -- IDs e Datas (validação básica)
+        id_chamado,
+        CAST(data_abertura AS TIMESTAMP) AS data_abertura,
+        CAST(data_fechamento AS TIMESTAMP) AS data_fechamento,
+        
+        -- Categorias (padronização)
+        UPPER(TRIM(categoria)) AS categoria,
+        INITCAP(TRIM(canal)) AS canal,
+        
+        -- Prioridade (tratamento de nulos e padronização)
+        CASE 
+            WHEN prioridade IS NULL THEN 'NÃO_INFORMADA'
+            ELSE INITCAP(TRIM(prioridade))
+        END AS prioridade,
+        
+        -- Status (validação)
+        CASE 
+            WHEN status IN ('Aberto', 'Em andamento', 'Fechado') THEN status
+            ELSE 'STATUS_DESCONHECIDO'
+        END AS status,
+        
+        -- Métricas numéricas (tratamento de outliers)
+        CAST(tempo_espera AS NUMERIC) AS tempo_espera_minutos,
+        CAST(tempo_resolucao AS NUMERIC) AS tempo_resolucao_horas,
+        
+        -- CSAT (valores válidos 1-5, nulos tratados)
+        CASE 
+            WHEN csat BETWEEN 1 AND 5 THEN csat
+            ELSE NULL
+        END AS csat_score,
+        
+        -- Flags booleanas (garantir consistência)
+        CAST(sla_atingido AS BOOLEAN) AS is_sla_atingido,
+        CAST(first_contact_resolution AS BOOLEAN) AS is_first_contact,
+        
+        -- Metadados para qualidade
+        CURRENT_TIMESTAMP() AS dbt_loaded_at
+
+    FROM raw_data
+)
+
+SELECT * FROM cleaned;
+
+
+[0m01:02:05.572893 [debug] [Thread-1 (]: BigQuery adapter: 404 Not found: Dataset service-desk-analytics-472019:raw was not found in location US; reason: notFound, message: Not found: Dataset service-desk-analytics-472019:raw was not found in location US
+
+Location: US
+Job ID: 2e0fe596-a1df-4db4-a11c-6d94617d0871
+
+[0m01:02:05.587553 [debug] [Thread-1 (]: Runtime Error in model stg_chamados (models/staging/stg_chamados.sql)
+  404 Not found: Dataset service-desk-analytics-472019:raw was not found in location US; reason: notFound, message: Not found: Dataset service-desk-analytics-472019:raw was not found in location US
+  
+  Location: US
+  Job ID: 2e0fe596-a1df-4db4-a11c-6d94617d0871
+  
+[0m01:02:05.589767 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4eea92d4-3e25-4cac-a214-dcfb4dc3644e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe1995310>]}
+[0m01:02:05.591291 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model raw_staging.stg_chamados .................. [[31mERROR[0m in 1.23s]
+[0m01:02:05.592817 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.stg_chamados
+[0m01:02:05.599406 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:02:05.601094 [debug] [MainThread]: Connection 'model.service_desk_analytics.stg_chamados' was properly closed.
+[0m01:02:05.602896 [info ] [MainThread]: 
+[0m01:02:05.607188 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.68 seconds (5.68s).
+[0m01:02:05.611806 [debug] [MainThread]: Command end result
+[0m01:02:05.682469 [info ] [MainThread]: 
+[0m01:02:05.683670 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m01:02:05.685115 [info ] [MainThread]: 
+[0m01:02:05.686534 [error] [MainThread]:   Runtime Error in model stg_chamados (models/staging/stg_chamados.sql)
+  404 Not found: Dataset service-desk-analytics-472019:raw was not found in location US; reason: notFound, message: Not found: Dataset service-desk-analytics-472019:raw was not found in location US
+  
+  Location: US
+  Job ID: 2e0fe596-a1df-4db4-a11c-6d94617d0871
+  
+[0m01:02:05.687509 [info ] [MainThread]: 
+[0m01:02:05.688616 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m01:02:05.690998 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 8.816195, "process_user_time": 5.660116, "process_kernel_time": 1.28389, "process_mem_max_rss": "216456", "process_out_blocks": "4354", "command_success": false, "process_in_blocks": "0"}
+[0m01:02:05.692366 [debug] [MainThread]: Command `dbt run` failed at 01:02:05.692062 after 8.82 seconds
+[0m01:02:05.693543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f100489d050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1004e07b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1008255290>]}
+[0m01:02:05.694852 [debug] [MainThread]: Flushing usage events
+[0m01:05:30.760544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d941cf650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d941ce5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d941cf710>]}
+
+
+============================== 01:05:30.768723 | e529736d-ae9e-4131-8425-561f227cfefe ==============================
+[0m01:05:30.768723 [info ] [MainThread]: Running with dbt=1.8.0
+[0m01:05:30.769986 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/usr/app/dbt/logs', 'version_check': 'True', 'profiles_dir': '/usr/app/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --target prod', 'send_anonymous_usage_stats': 'True'}
+[0m01:05:31.952995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e529736d-ae9e-4131-8425-561f227cfefe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d75d23e50>]}
+[0m01:05:32.007019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e529736d-ae9e-4131-8425-561f227cfefe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d95f0bc10>]}
+[0m01:05:32.008184 [info ] [MainThread]: Registered adapter: bigquery=1.8.0
+[0m01:05:32.024879 [debug] [MainThread]: checksum: b3c56ae100510f69e3c5cb21de5a14a249b030b632caca0456cb9cfa1123b0a0, vars: {}, profile: , target: prod, version: 1.8.0
+[0m01:05:32.131269 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m01:05:32.132469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e529736d-ae9e-4131-8425-561f227cfefe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d95788b90>]}
+[0m01:05:33.254677 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m01:05:33.255926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e529736d-ae9e-4131-8425-561f227cfefe', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d75bafd50>]}
+[0m01:05:33.560115 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.service_desk_analytics.marts
+- models.service_desk_analytics.intermediate
+[0m01:05:33.578861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e529736d-ae9e-4131-8425-561f227cfefe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d75adb250>]}
+[0m01:05:33.708074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e529736d-ae9e-4131-8425-561f227cfefe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d7513bf50>]}
+[0m01:05:33.708937 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 469 macros
+[0m01:05:33.709695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e529736d-ae9e-4131-8425-561f227cfefe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d7554b050>]}
+[0m01:05:33.712010 [info ] [MainThread]: 
+[0m01:05:33.713278 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m01:05:33.714989 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m01:05:33.715901 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:05:34.635179 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now list_service-desk-analytics-472019_raw_staging)
+[0m01:05:34.637622 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:05:35.553210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e529736d-ae9e-4131-8425-561f227cfefe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d7553e3d0>]}
+[0m01:05:35.556122 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m01:05:35.558539 [info ] [MainThread]: 
+[0m01:05:35.585131 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.stg_chamados
+[0m01:05:35.587334 [info ] [Thread-1 (]: 1 of 1 START sql view model raw_staging.stg_chamados ........................... [RUN]
+[0m01:05:35.589774 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_staging, now model.service_desk_analytics.stg_chamados)
+[0m01:05:35.591288 [debug] [Thread-1 (]: Began compiling node model.service_desk_analytics.stg_chamados
+[0m01:05:35.607885 [debug] [Thread-1 (]: Writing injected SQL for node "model.service_desk_analytics.stg_chamados"
+[0m01:05:35.613948 [debug] [Thread-1 (]: Began executing node model.service_desk_analytics.stg_chamados
+[0m01:05:35.658769 [debug] [Thread-1 (]: Writing runtime sql for node "model.service_desk_analytics.stg_chamados"
+[0m01:05:35.662512 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:05:35.665205 [debug] [Thread-1 (]: On model.service_desk_analytics.stg_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.stg_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_staging`.`stg_chamados`
+  OPTIONS()
+  as 
+
+WITH raw_data AS (
+    SELECT * FROM `service-desk-analytics-472019`.`raw`.`chamados`
+),
+
+cleaned AS (
+    SELECT
+        -- IDs e Datas (validação básica)
+        id_chamado,
+        CAST(data_abertura AS TIMESTAMP) AS data_abertura,
+        CAST(data_fechamento AS TIMESTAMP) AS data_fechamento,
+        
+        -- Categorias (padronização)
+        UPPER(TRIM(categoria)) AS categoria,
+        INITCAP(TRIM(canal)) AS canal,
+        
+        -- Prioridade (tratamento de nulos e padronização)
+        CASE 
+            WHEN prioridade IS NULL THEN 'NÃO_INFORMADA'
+            ELSE INITCAP(TRIM(prioridade))
+        END AS prioridade,
+        
+        -- Status (validação)
+        CASE 
+            WHEN status IN ('Aberto', 'Em andamento', 'Fechado') THEN status
+            ELSE 'STATUS_DESCONHECIDO'
+        END AS status,
+        
+        -- Métricas numéricas (tratamento de outliers)
+        CAST(tempo_espera AS NUMERIC) AS tempo_espera_minutos,
+        CAST(tempo_resolucao AS NUMERIC) AS tempo_resolucao_horas,
+        
+        -- CSAT (valores válidos 1-5, nulos tratados)
+        CASE 
+            WHEN csat BETWEEN 1 AND 5 THEN csat
+            ELSE NULL
+        END AS csat_score,
+        
+        -- Flags booleanas (garantir consistência)
+        CAST(sla_atingido AS BOOLEAN) AS is_sla_atingido,
+        CAST(first_contact_resolution AS BOOLEAN) AS is_first_contact,
+        
+        -- Metadados para qualidade
+        CURRENT_TIMESTAMP() AS dbt_loaded_at
+
+    FROM raw_data
+)
+
+SELECT * FROM cleaned;
+
+
+[0m01:05:36.782753 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:2b4dc68a-7313-448c-8c3b-b077e8ca45b8&page=queryresults
+[0m01:05:36.785349 [debug] [Thread-1 (]: BigQuery adapter: Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.stg_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_staging`.`stg_chamados`
+  OPTIONS()
+  as 
+
+WITH raw_data AS (
+    SELECT * FROM `service-desk-analytics-472019`.`raw`.`chamados`
+),
+
+cleaned AS (
+    SELECT
+        -- IDs e Datas (validação básica)
+        id_chamado,
+        CAST(data_abertura AS TIMESTAMP) AS data_abertura,
+        CAST(data_fechamento AS TIMESTAMP) AS data_fechamento,
+        
+        -- Categorias (padronização)
+        UPPER(TRIM(categoria)) AS categoria,
+        INITCAP(TRIM(canal)) AS canal,
+        
+        -- Prioridade (tratamento de nulos e padronização)
+        CASE 
+            WHEN prioridade IS NULL THEN 'NÃO_INFORMADA'
+            ELSE INITCAP(TRIM(prioridade))
+        END AS prioridade,
+        
+        -- Status (validação)
+        CASE 
+            WHEN status IN ('Aberto', 'Em andamento', 'Fechado') THEN status
+            ELSE 'STATUS_DESCONHECIDO'
+        END AS status,
+        
+        -- Métricas numéricas (tratamento de outliers)
+        CAST(tempo_espera AS NUMERIC) AS tempo_espera_minutos,
+        CAST(tempo_resolucao AS NUMERIC) AS tempo_resolucao_horas,
+        
+        -- CSAT (valores válidos 1-5, nulos tratados)
+        CASE 
+            WHEN csat BETWEEN 1 AND 5 THEN csat
+            ELSE NULL
+        END AS csat_score,
+        
+        -- Flags booleanas (garantir consistência)
+        CAST(sla_atingido AS BOOLEAN) AS is_sla_atingido,
+        CAST(first_contact_resolution AS BOOLEAN) AS is_first_contact,
+        
+        -- Metadados para qualidade
+        CURRENT_TIMESTAMP() AS dbt_loaded_at
+
+    FROM raw_data
+)
+
+SELECT * FROM cleaned;
+
+
+[0m01:05:36.788458 [debug] [Thread-1 (]: BigQuery adapter: 404 Not found: Dataset service-desk-analytics-472019:raw_staging was not found in location us-central1; reason: notFound, message: Not found: Dataset service-desk-analytics-472019:raw_staging was not found in location us-central1
+
+Location: us-central1
+Job ID: 2b4dc68a-7313-448c-8c3b-b077e8ca45b8
+
+[0m01:05:36.801949 [debug] [Thread-1 (]: Runtime Error in model stg_chamados (models/staging/stg_chamados.sql)
+  404 Not found: Dataset service-desk-analytics-472019:raw_staging was not found in location us-central1; reason: notFound, message: Not found: Dataset service-desk-analytics-472019:raw_staging was not found in location us-central1
+  
+  Location: us-central1
+  Job ID: 2b4dc68a-7313-448c-8c3b-b077e8ca45b8
+  
+[0m01:05:36.805224 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e529736d-ae9e-4131-8425-561f227cfefe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d755eb390>]}
+[0m01:05:36.806988 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model raw_staging.stg_chamados .................. [[31mERROR[0m in 1.21s]
+[0m01:05:36.809057 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.stg_chamados
+[0m01:05:36.818058 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:05:36.819507 [debug] [MainThread]: Connection 'model.service_desk_analytics.stg_chamados' was properly closed.
+[0m01:05:36.821270 [info ] [MainThread]: 
+[0m01:05:36.823060 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.11 seconds (3.11s).
+[0m01:05:36.828399 [debug] [MainThread]: Command end result
+[0m01:05:36.902506 [info ] [MainThread]: 
+[0m01:05:36.903372 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m01:05:36.904542 [info ] [MainThread]: 
+[0m01:05:36.905700 [error] [MainThread]:   Runtime Error in model stg_chamados (models/staging/stg_chamados.sql)
+  404 Not found: Dataset service-desk-analytics-472019:raw_staging was not found in location us-central1; reason: notFound, message: Not found: Dataset service-desk-analytics-472019:raw_staging was not found in location us-central1
+  
+  Location: us-central1
+  Job ID: 2b4dc68a-7313-448c-8c3b-b077e8ca45b8
+  
+[0m01:05:36.906859 [info ] [MainThread]: 
+[0m01:05:36.907904 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m01:05:36.911608 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 6.203351, "process_user_time": 5.37335, "process_kernel_time": 1.45178, "process_mem_max_rss": "215892", "process_out_blocks": "4352", "command_success": false, "process_in_blocks": "0"}
+[0m01:05:36.912734 [debug] [MainThread]: Command `dbt run` failed at 01:05:36.912570 after 6.20 seconds
+[0m01:05:36.913710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d9400d510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d9400e590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2d979a1290>]}
+[0m01:05:36.914455 [debug] [MainThread]: Flushing usage events
+[0m15:00:32.663587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e3dab390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e3dab550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e3daa7d0>]}
+
+
+============================== 15:00:32.675189 | 419c768b-0226-4c2f-8566-85b55f5087a7 ==============================
+[0m15:00:32.675189 [info ] [MainThread]: Running with dbt=1.8.0
+[0m15:00:32.676421 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/usr/app/dbt/logs', 'profiles_dir': '/usr/app/dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --target prod', 'send_anonymous_usage_stats': 'True'}
+[0m15:00:35.186374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '419c768b-0226-4c2f-8566-85b55f5087a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4c5bb1d10>]}
+[0m15:00:35.254712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '419c768b-0226-4c2f-8566-85b55f5087a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e5cd7ad0>]}
+[0m15:00:35.256240 [info ] [MainThread]: Registered adapter: bigquery=1.8.0
+[0m15:00:35.282240 [debug] [MainThread]: checksum: b3c56ae100510f69e3c5cb21de5a14a249b030b632caca0456cb9cfa1123b0a0, vars: {}, profile: , target: prod, version: 1.8.0
+[0m15:00:35.435865 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m15:00:35.437238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '419c768b-0226-4c2f-8566-85b55f5087a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e555cb10>]}
+[0m15:00:36.808452 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m15:00:36.809800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '419c768b-0226-4c2f-8566-85b55f5087a7', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4c5b466d0>]}
+[0m15:00:37.178975 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.service_desk_analytics.intermediate
+- models.service_desk_analytics.marts
+[0m15:00:37.193396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '419c768b-0226-4c2f-8566-85b55f5087a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4c5929390>]}
+[0m15:00:37.402764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '419c768b-0226-4c2f-8566-85b55f5087a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4c4f6f190>]}
+[0m15:00:37.404108 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 469 macros
+[0m15:00:37.405390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '419c768b-0226-4c2f-8566-85b55f5087a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4c5a08cd0>]}
+[0m15:00:37.409066 [info ] [MainThread]: 
+[0m15:00:37.411219 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:00:37.416712 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m15:00:37.418848 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:00:38.548860 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now create_service-desk-analytics-472019_staging_staging)
+[0m15:00:38.550950 [debug] [ThreadPool]: Creating schema "database: "service-desk-analytics-472019"
+schema: "staging_staging"
+"
+[0m15:00:38.591857 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:00:38.598490 [debug] [ThreadPool]: On create_service-desk-analytics-472019_staging_staging: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "connection_name": "create_service-desk-analytics-472019_staging_staging"} */
+create schema if not exists `service-desk-analytics-472019`.`staging_staging`
+  
+[0m15:00:39.666889 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:9732ad56-7a18-4784-8787-dc7eee522991&page=queryresults
+[0m15:00:40.749098 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_service-desk-analytics-472019_staging_staging, now list_service-desk-analytics-472019_staging_staging)
+[0m15:00:40.751743 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:00:41.646317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '419c768b-0226-4c2f-8566-85b55f5087a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4c5a75d90>]}
+[0m15:00:41.647669 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m15:00:41.648980 [info ] [MainThread]: 
+[0m15:00:41.669650 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.stg_chamados
+[0m15:00:41.671082 [info ] [Thread-1 (]: 1 of 1 START sql view model staging_staging.stg_chamados ....................... [RUN]
+[0m15:00:41.672362 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_staging_staging, now model.service_desk_analytics.stg_chamados)
+[0m15:00:41.673446 [debug] [Thread-1 (]: Began compiling node model.service_desk_analytics.stg_chamados
+[0m15:00:41.688252 [debug] [Thread-1 (]: Writing injected SQL for node "model.service_desk_analytics.stg_chamados"
+[0m15:00:41.695567 [debug] [Thread-1 (]: Began executing node model.service_desk_analytics.stg_chamados
+[0m15:00:41.778184 [debug] [Thread-1 (]: Writing runtime sql for node "model.service_desk_analytics.stg_chamados"
+[0m15:00:41.783126 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:00:41.787423 [debug] [Thread-1 (]: On model.service_desk_analytics.stg_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.stg_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`staging_staging`.`stg_chamados`
+  OPTIONS()
+  as 
+
+WITH raw_data AS (
+    SELECT * FROM `service-desk-analytics-472019`.`raw`.`chamados`
+),
+
+cleaned AS (
+    SELECT
+        -- IDs e Datas (validação básica)
+        id_chamado,
+        CAST(data_abertura AS TIMESTAMP) AS data_abertura,
+        CAST(data_fechamento AS TIMESTAMP) AS data_fechamento,
+        
+        -- Categorias (padronização)
+        UPPER(TRIM(categoria)) AS categoria,
+        INITCAP(TRIM(canal)) AS canal,
+        
+        -- Prioridade (tratamento de nulos e padronização)
+        CASE 
+            WHEN prioridade IS NULL THEN 'NÃO_INFORMADA'
+            ELSE INITCAP(TRIM(prioridade))
+        END AS prioridade,
+        
+        -- Status (validação)
+        CASE 
+            WHEN status IN ('Aberto', 'Em andamento', 'Fechado') THEN status
+            ELSE 'STATUS_DESCONHECIDO'
+        END AS status,
+        
+        -- Métricas numéricas (tratamento de outliers)
+        CAST(tempo_espera AS NUMERIC) AS tempo_espera_minutos,
+        CAST(tempo_resolucao AS NUMERIC) AS tempo_resolucao_horas,
+        
+        -- CSAT (valores válidos 1-5, nulos tratados)
+        CASE 
+            WHEN csat BETWEEN 1 AND 5 THEN csat
+            ELSE NULL
+        END AS csat_score,
+        
+        -- Flags booleanas (garantir consistência)
+        CAST(sla_atingido AS BOOLEAN) AS is_sla_atingido,
+        CAST(first_contact_resolution AS BOOLEAN) AS is_first_contact,
+        
+        -- Metadados para qualidade
+        CURRENT_TIMESTAMP() AS dbt_loaded_at
+
+    FROM raw_data
+)
+
+SELECT * FROM cleaned;
+
+
+[0m15:00:42.907157 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:019d57f0-2c75-4892-a8cb-b20bf9d7001f&page=queryresults
+[0m15:00:43.587151 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '419c768b-0226-4c2f-8566-85b55f5087a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4c4f432d0>]}
+[0m15:00:43.589288 [info ] [Thread-1 (]: 1 of 1 OK created sql view model staging_staging.stg_chamados .................. [[32mCREATE VIEW (0 processed)[0m in 1.91s]
+[0m15:00:43.591988 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.stg_chamados
+[0m15:00:43.600472 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:00:43.602237 [debug] [MainThread]: Connection 'model.service_desk_analytics.stg_chamados' was properly closed.
+[0m15:00:43.603956 [info ] [MainThread]: 
+[0m15:00:43.606903 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 6.19 seconds (6.19s).
+[0m15:00:43.616781 [debug] [MainThread]: Command end result
+[0m15:00:43.688525 [info ] [MainThread]: 
+[0m15:00:43.691053 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:00:43.692705 [info ] [MainThread]: 
+[0m15:00:43.694158 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m15:00:43.699003 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 11.118825, "process_user_time": 6.312044, "process_kernel_time": 1.941908, "process_mem_max_rss": "213120", "process_in_blocks": "270936", "process_out_blocks": "4348"}
+[0m15:00:43.701489 [debug] [MainThread]: Command `dbt run` succeeded at 15:00:43.700680 after 11.12 seconds
+[0m15:00:43.703760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e3dd3710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e761ccd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4e77a1390>]}
+[0m15:00:43.705258 [debug] [MainThread]: Flushing usage events
+[0m15:13:32.767007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f49a36990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f49a36210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f49a37090>]}
+
+
+============================== 15:13:32.782776 | e2da3bcc-8a67-42bf-ae08-52b90d5b8441 ==============================
+[0m15:13:32.782776 [info ] [MainThread]: Running with dbt=1.8.0
+[0m15:13:32.785221 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/usr/app/dbt/logs', 'profiles_dir': '/usr/app/dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --target prod', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:13:35.335770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e2da3bcc-8a67-42bf-ae08-52b90d5b8441', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f278eaa90>]}
+[0m15:13:35.390469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e2da3bcc-8a67-42bf-ae08-52b90d5b8441', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f4b9d8610>]}
+[0m15:13:35.391999 [info ] [MainThread]: Registered adapter: bigquery=1.8.0
+[0m15:13:35.412491 [debug] [MainThread]: checksum: b3c56ae100510f69e3c5cb21de5a14a249b030b632caca0456cb9cfa1123b0a0, vars: {}, profile: , target: prod, version: 1.8.0
+[0m15:13:35.544422 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m15:13:35.546053 [info ] [MainThread]: Unable to do partial parsing because env vars used in dbt_project.yml have changed
+[0m15:13:35.547104 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m15:13:35.548215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e2da3bcc-8a67-42bf-ae08-52b90d5b8441', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f4b248b50>]}
+[0m15:13:36.896912 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m15:13:36.898047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e2da3bcc-8a67-42bf-ae08-52b90d5b8441', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f276c95d0>]}
+[0m15:13:37.256001 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.service_desk_analytics.intermediate
+- models.service_desk_analytics.marts
+[0m15:13:37.273096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e2da3bcc-8a67-42bf-ae08-52b90d5b8441', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f273b3390>]}
+[0m15:13:37.439437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e2da3bcc-8a67-42bf-ae08-52b90d5b8441', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f26b6b090>]}
+[0m15:13:37.440437 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 469 macros
+[0m15:13:37.441427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e2da3bcc-8a67-42bf-ae08-52b90d5b8441', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f26f37fd0>]}
+[0m15:13:37.444118 [info ] [MainThread]: 
+[0m15:13:37.445513 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:13:37.448117 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m15:13:37.449894 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:13:38.469523 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now create_service-desk-analytics-472019_raw_staging)
+[0m15:13:38.472269 [debug] [ThreadPool]: Creating schema "database: "service-desk-analytics-472019"
+schema: "raw_staging"
+"
+[0m15:13:38.496584 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:13:38.503058 [debug] [ThreadPool]: On create_service-desk-analytics-472019_raw_staging: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "connection_name": "create_service-desk-analytics-472019_raw_staging"} */
+create schema if not exists `service-desk-analytics-472019`.`raw_staging`
+  
+[0m15:13:39.451300 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:08c42621-4b41-489f-b3b5-2c9de3331410&page=queryresults
+[0m15:13:40.304150 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019_raw_staging'
+[0m15:13:40.306253 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:13:41.334584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e2da3bcc-8a67-42bf-ae08-52b90d5b8441', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f4c45a610>]}
+[0m15:13:41.337509 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m15:13:41.340214 [info ] [MainThread]: 
+[0m15:13:41.376286 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.stg_chamados
+[0m15:13:41.378165 [info ] [Thread-1 (]: 1 of 1 START sql view model raw_staging.stg_chamados ........................... [RUN]
+[0m15:13:41.380904 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_staging, now model.service_desk_analytics.stg_chamados)
+[0m15:13:41.383109 [debug] [Thread-1 (]: Began compiling node model.service_desk_analytics.stg_chamados
+[0m15:13:41.400884 [debug] [Thread-1 (]: Writing injected SQL for node "model.service_desk_analytics.stg_chamados"
+[0m15:13:41.408279 [debug] [Thread-1 (]: Began executing node model.service_desk_analytics.stg_chamados
+[0m15:13:41.450473 [debug] [Thread-1 (]: Writing runtime sql for node "model.service_desk_analytics.stg_chamados"
+[0m15:13:41.454760 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:13:41.457818 [debug] [Thread-1 (]: On model.service_desk_analytics.stg_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.stg_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_staging`.`stg_chamados`
+  OPTIONS()
+  as 
+
+WITH raw_data AS (
+    SELECT * FROM `service-desk-analytics-472019`.`raw`.`chamados`
+),
+
+cleaned AS (
+    SELECT
+        -- IDs e Datas (validação básica)
+        id_chamado,
+        CAST(data_abertura AS TIMESTAMP) AS data_abertura,
+        CAST(data_fechamento AS TIMESTAMP) AS data_fechamento,
+        
+        -- Categorias (padronização)
+        UPPER(TRIM(categoria)) AS categoria,
+        INITCAP(TRIM(canal)) AS canal,
+        
+        -- Prioridade (tratamento de nulos e padronização)
+        CASE 
+            WHEN prioridade IS NULL THEN 'NÃO_INFORMADA'
+            ELSE INITCAP(TRIM(prioridade))
+        END AS prioridade,
+        
+        -- Status (validação)
+        CASE 
+            WHEN status IN ('Aberto', 'Em andamento', 'Fechado') THEN status
+            ELSE 'STATUS_DESCONHECIDO'
+        END AS status,
+        
+        -- Métricas numéricas (tratamento de outliers)
+        CAST(tempo_espera AS NUMERIC) AS tempo_espera_minutos,
+        CAST(tempo_resolucao AS NUMERIC) AS tempo_resolucao_horas,
+        
+        -- CSAT (valores válidos 1-5, nulos tratados)
+        CASE 
+            WHEN csat BETWEEN 1 AND 5 THEN csat
+            ELSE NULL
+        END AS csat_score,
+        
+        -- Flags booleanas (garantir consistência)
+        CAST(sla_atingido AS BOOLEAN) AS is_sla_atingido,
+        CAST(first_contact_resolution AS BOOLEAN) AS is_first_contact,
+        
+        -- Metadados para qualidade
+        CURRENT_TIMESTAMP() AS dbt_loaded_at
+
+    FROM raw_data
+)
+
+SELECT * FROM cleaned;
+
+
+[0m15:13:42.666798 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:455cf0bb-d751-46c6-801c-f00b0cb65181&page=queryresults
+[0m15:13:43.420582 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e2da3bcc-8a67-42bf-ae08-52b90d5b8441', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f26b431d0>]}
+[0m15:13:43.422541 [info ] [Thread-1 (]: 1 of 1 OK created sql view model raw_staging.stg_chamados ...................... [[32mCREATE VIEW (0 processed)[0m in 2.04s]
+[0m15:13:43.424670 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.stg_chamados
+[0m15:13:43.432279 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:13:43.434182 [debug] [MainThread]: Connection 'create_service-desk-analytics-472019_raw_staging' was properly closed.
+[0m15:13:43.435557 [debug] [MainThread]: Connection 'model.service_desk_analytics.stg_chamados' was properly closed.
+[0m15:13:43.436869 [info ] [MainThread]: 
+[0m15:13:43.438500 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.99 seconds (5.99s).
+[0m15:13:43.443201 [debug] [MainThread]: Command end result
+[0m15:13:43.506839 [info ] [MainThread]: 
+[0m15:13:43.508114 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:13:43.509122 [info ] [MainThread]: 
+[0m15:13:43.510117 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m15:13:43.514929 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.873021, "process_user_time": 6.434238, "process_kernel_time": 1.949394, "process_mem_max_rss": "213340", "process_in_blocks": "270696", "process_out_blocks": "4349"}
+[0m15:13:43.515971 [debug] [MainThread]: Command `dbt run` succeeded at 15:13:43.515815 after 10.87 seconds
+[0m15:13:43.516684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f49a6c150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f4afac650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f4d4a4810>]}
+[0m15:13:43.517346 [debug] [MainThread]: Flushing usage events
+[0m02:14:16.157637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce478a5dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce478a4fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce4786b410>]}
+
+
+============================== 02:14:16.168263 | 092f4f93-9c39-4a71-9431-af65fe5a62d3 ==============================
+[0m02:14:16.168263 [info ] [MainThread]: Running with dbt=1.8.0
+[0m02:14:16.169495 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/usr/app/dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/usr/app/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --target prod', 'send_anonymous_usage_stats': 'True'}
+[0m02:14:18.872932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '092f4f93-9c39-4a71-9431-af65fe5a62d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce37f96ed0>]}
+[0m02:14:18.924732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '092f4f93-9c39-4a71-9431-af65fe5a62d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce49790510>]}
+[0m02:14:18.926441 [info ] [MainThread]: Registered adapter: bigquery=1.8.0
+[0m02:14:18.950439 [debug] [MainThread]: checksum: b3c56ae100510f69e3c5cb21de5a14a249b030b632caca0456cb9cfa1123b0a0, vars: {}, profile: , target: prod, version: 1.8.0
+[0m02:14:19.200894 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 7 files added, 0 files changed.
+[0m02:14:19.202012 [debug] [MainThread]: Partial parsing: added file: service_desk_analytics://models/marts/dim_canal.sql
+[0m02:14:19.202848 [debug] [MainThread]: Partial parsing: added file: service_desk_analytics://models/intermediate/int_chamados.sql
+[0m02:14:19.203778 [debug] [MainThread]: Partial parsing: added file: service_desk_analytics://models/marts/dim_categoria.sql
+[0m02:14:19.204504 [debug] [MainThread]: Partial parsing: added file: service_desk_analytics://models/marts/dim_tempo.sql
+[0m02:14:19.205237 [debug] [MainThread]: Partial parsing: added file: service_desk_analytics://models/marts/dim_status.sql
+[0m02:14:19.205825 [debug] [MainThread]: Partial parsing: added file: service_desk_analytics://models/marts/fato_chamados.sql
+[0m02:14:19.206415 [debug] [MainThread]: Partial parsing: added file: service_desk_analytics://models/marts/dim_prioridade.sql
+[0m02:14:19.533107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '092f4f93-9c39-4a71-9431-af65fe5a62d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce47885050>]}
+[0m02:14:19.685087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '092f4f93-9c39-4a71-9431-af65fe5a62d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce295eb450>]}
+[0m02:14:19.685944 [info ] [MainThread]: Found 8 models, 5 data tests, 1 source, 469 macros
+[0m02:14:19.686772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '092f4f93-9c39-4a71-9431-af65fe5a62d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce292c9f50>]}
+[0m02:14:19.689434 [info ] [MainThread]: 
+[0m02:14:19.690573 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m02:14:19.698294 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m02:14:19.700234 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m02:14:19.701173 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:14:19.702560 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m02:14:19.705149 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:14:19.710224 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:14:21.122983 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now create_service-desk-analytics-472019_raw_intermediate)
+[0m02:14:21.126435 [debug] [ThreadPool]: Creating schema "database: "service-desk-analytics-472019"
+schema: "raw_intermediate"
+"
+[0m02:14:21.124310 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now create_service-desk-analytics-472019_raw_marts)
+[0m02:14:21.152031 [debug] [ThreadPool]: Creating schema "database: "service-desk-analytics-472019"
+schema: "raw_marts"
+"
+[0m02:14:21.153958 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:14:21.162472 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:14:21.167258 [debug] [ThreadPool]: On create_service-desk-analytics-472019_raw_intermediate: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "connection_name": "create_service-desk-analytics-472019_raw_intermediate"} */
+create schema if not exists `service-desk-analytics-472019`.`raw_intermediate`
+  
+[0m02:14:21.216797 [debug] [ThreadPool]: On create_service-desk-analytics-472019_raw_marts: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "connection_name": "create_service-desk-analytics-472019_raw_marts"} */
+create schema if not exists `service-desk-analytics-472019`.`raw_marts`
+  
+[0m02:14:22.382882 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:41c19806-a719-49e1-9274-5de9c8470a8f&page=queryresults
+[0m02:14:22.384554 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:f61c58f8-dce4-4ae5-8d99-e9f373288703&page=queryresults
+[0m02:14:24.407347 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_service-desk-analytics-472019_raw_marts, now list_service-desk-analytics-472019_raw_staging)
+[0m02:14:24.409541 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_service-desk-analytics-472019_raw_intermediate, now list_service-desk-analytics-472019_raw_intermediate)
+[0m02:14:24.411743 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now list_service-desk-analytics-472019_raw_marts)
+[0m02:14:24.413072 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:14:24.414598 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:14:24.416080 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:14:25.433415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '092f4f93-9c39-4a71-9431-af65fe5a62d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce29b36fd0>]}
+[0m02:14:25.435532 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m02:14:25.438088 [info ] [MainThread]: 
+[0m02:14:25.477166 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.dim_tempo
+[0m02:14:25.478358 [debug] [Thread-2 (]: Began running node model.service_desk_analytics.stg_chamados
+[0m02:14:25.480225 [info ] [Thread-1 (]: 1 of 8 START sql table model raw_marts.dim_tempo ............................... [RUN]
+[0m02:14:25.483618 [info ] [Thread-2 (]: 2 of 8 START sql view model raw_staging.stg_chamados ........................... [RUN]
+[0m02:14:25.485995 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_marts, now model.service_desk_analytics.dim_tempo)
+[0m02:14:25.487668 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_intermediate, now model.service_desk_analytics.stg_chamados)
+[0m02:14:25.489055 [debug] [Thread-1 (]: Began compiling node model.service_desk_analytics.dim_tempo
+[0m02:14:25.490575 [debug] [Thread-2 (]: Began compiling node model.service_desk_analytics.stg_chamados
+[0m02:14:25.506688 [debug] [Thread-1 (]: Writing injected SQL for node "model.service_desk_analytics.dim_tempo"
+[0m02:14:25.512452 [debug] [Thread-2 (]: Writing injected SQL for node "model.service_desk_analytics.stg_chamados"
+[0m02:14:25.517118 [debug] [Thread-2 (]: Began executing node model.service_desk_analytics.stg_chamados
+[0m02:14:25.517733 [debug] [Thread-1 (]: Began executing node model.service_desk_analytics.dim_tempo
+[0m02:14:25.588378 [debug] [Thread-2 (]: Writing runtime sql for node "model.service_desk_analytics.stg_chamados"
+[0m02:14:25.607060 [debug] [Thread-1 (]: Writing runtime sql for node "model.service_desk_analytics.dim_tempo"
+[0m02:14:25.608709 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m02:14:25.611634 [debug] [Thread-2 (]: On model.service_desk_analytics.stg_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.stg_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_staging`.`stg_chamados`
+  OPTIONS()
+  as 
+
+WITH raw_data AS (
+    SELECT * FROM `service-desk-analytics-472019`.`raw`.`chamados`
+),
+
+cleaned AS (
+    SELECT
+        -- IDs e Datas (validação básica)
+        id_chamado,
+        CAST(data_abertura AS TIMESTAMP) AS data_abertura,
+        CAST(data_fechamento AS TIMESTAMP) AS data_fechamento,
+        
+        -- Categorias (padronização)
+        UPPER(TRIM(categoria)) AS categoria,
+        INITCAP(TRIM(canal)) AS canal,
+        
+        -- Prioridade (tratamento de nulos e padronização)
+        CASE 
+            WHEN prioridade IS NULL THEN 'NÃO_INFORMADA'
+            ELSE INITCAP(TRIM(prioridade))
+        END AS prioridade,
+        
+        -- Status (validação)
+        CASE 
+            WHEN status IN ('Aberto', 'Em andamento', 'Fechado') THEN status
+            ELSE 'STATUS_DESCONHECIDO'
+        END AS status,
+        
+        -- Métricas numéricas (tratamento de outliers)
+        CAST(tempo_espera AS NUMERIC) AS tempo_espera_minutos,
+        CAST(tempo_resolucao AS NUMERIC) AS tempo_resolucao_horas,
+        
+        -- CSAT (valores válidos 1-5, nulos tratados)
+        CASE 
+            WHEN csat BETWEEN 1 AND 5 THEN csat
+            ELSE NULL
+        END AS csat_score,
+        
+        -- Flags booleanas (garantir consistência)
+        CAST(sla_atingido AS BOOLEAN) AS is_sla_atingido,
+        CAST(first_contact_resolution AS BOOLEAN) AS is_first_contact,
+        
+        -- Metadados para qualidade
+        CURRENT_TIMESTAMP() AS dbt_loaded_at
+
+    FROM raw_data
+)
+
+SELECT * FROM cleaned;
+
+
+[0m02:14:25.646156 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:14:25.649977 [debug] [Thread-1 (]: On model.service_desk_analytics.dim_tempo: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.dim_tempo"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`dim_tempo`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+WITH dates AS (
+    SELECT *
+    FROM unnest(generate_date_array('2020-01-01', current_date(), interval 1 day)) AS data
+)
+
+SELECT
+    row_number() OVER(ORDER BY data) AS id_tempo,
+    data,
+    EXTRACT(year FROM data) AS ano,
+    EXTRACT(quarter FROM data) AS trimestre,
+    EXTRACT(month FROM data) AS mes,
+    format_date('%Y-%m', data) AS ano_mes,
+    EXTRACT(day FROM data) AS dia,
+    EXTRACT(dayofweek FROM data) AS dia_semana,
+    CASE EXTRACT(dayofweek FROM data)
+        WHEN 1 THEN 'Domingo'
+        WHEN 2 THEN 'Segunda'
+        WHEN 3 THEN 'Terça'
+        WHEN 4 THEN 'Quarta'
+        WHEN 5 THEN 'Quinta'
+        WHEN 6 THEN 'Sexta'
+        WHEN 7 THEN 'Sábado'
+    END AS nome_dia_semana
+FROM dates
+    );
+  
+[0m02:14:26.651308 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:d1d7a549-fe87-45e9-8a6e-da461015ff82&page=queryresults
+[0m02:14:26.887815 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:c45e012c-2c0a-4e8f-987c-3cfd8a5d3c3f&page=queryresults
+[0m02:14:27.263617 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '092f4f93-9c39-4a71-9431-af65fe5a62d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce29407f10>]}
+[0m02:14:27.265457 [info ] [Thread-2 (]: 2 of 8 OK created sql view model raw_staging.stg_chamados ...................... [[32mCREATE VIEW (0 processed)[0m in 1.77s]
+[0m02:14:27.267475 [debug] [Thread-2 (]: Finished running node model.service_desk_analytics.stg_chamados
+[0m02:14:27.269283 [debug] [Thread-4 (]: Began running node model.service_desk_analytics.int_chamados
+[0m02:14:27.270492 [info ] [Thread-4 (]: 3 of 8 START sql view model raw_intermediate.int_chamados ...................... [RUN]
+[0m02:14:27.272450 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.service_desk_analytics.int_chamados'
+[0m02:14:27.274457 [debug] [Thread-4 (]: Began compiling node model.service_desk_analytics.int_chamados
+[0m02:14:27.283062 [debug] [Thread-4 (]: Writing injected SQL for node "model.service_desk_analytics.int_chamados"
+[0m02:14:27.288177 [debug] [Thread-4 (]: Began executing node model.service_desk_analytics.int_chamados
+[0m02:14:27.294610 [debug] [Thread-4 (]: Writing runtime sql for node "model.service_desk_analytics.int_chamados"
+[0m02:14:27.298950 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m02:14:27.301674 [debug] [Thread-4 (]: On model.service_desk_analytics.int_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.int_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados`
+  OPTIONS()
+  as 
+
+SELECT
+    stg.id_chamado,
+    stg.data_abertura,
+    stg.data_fechamento,
+    date(stg.data_abertura) AS dt_abertura,
+    date(stg.data_fechamento) AS dt_fechamento,
+    stg.categoria,
+    stg.canal,
+    stg.prioridade,
+    stg.status,
+    stg.tempo_espera,
+    stg.tempo_resolucao,
+    stg.csat,
+    stg.sla_atingido,
+    stg.first_contact_resolution
+FROM `service-desk-analytics-472019`.`raw_staging`.`stg_chamados` stg;
+
+
+[0m02:14:28.595575 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:bc993668-281d-426f-ac11-3f44de371087&page=queryresults
+[0m02:14:28.862512 [debug] [Thread-4 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Name tempo_espera not found inside stg at [18:9]; reason: invalidQuery, location: query, message: Name tempo_espera not found inside stg at [18:9]')
+[0m02:14:30.236257 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '092f4f93-9c39-4a71-9431-af65fe5a62d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce292d6a90>]}
+[0m02:14:30.239187 [info ] [Thread-1 (]: 1 of 8 OK created sql table model raw_marts.dim_tempo .......................... [[32mCREATE TABLE (2.1k rows, 0 processed)[0m in 4.75s]
+[0m02:14:30.242494 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.dim_tempo
+[0m02:14:30.540622 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:ee8b4c57-0672-4985-ac2e-3ff5f15351d9&page=queryresults
+[0m02:14:30.788561 [error] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:ee8b4c57-0672-4985-ac2e-3ff5f15351d9&page=queryresults
+[0m02:14:30.826940 [debug] [Thread-4 (]: Database Error in model int_chamados (models/intermediate/int_chamados.sql)
+  Name tempo_espera not found inside stg at [18:9]
+  compiled Code at target/run/service_desk_analytics/models/intermediate/int_chamados.sql
+[0m02:14:30.828537 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '092f4f93-9c39-4a71-9431-af65fe5a62d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce28d31f10>]}
+[0m02:14:30.830333 [error] [Thread-4 (]: 3 of 8 ERROR creating sql view model raw_intermediate.int_chamados ............. [[31mERROR[0m in 3.56s]
+[0m02:14:30.832397 [debug] [Thread-4 (]: Finished running node model.service_desk_analytics.int_chamados
+[0m02:14:30.837922 [debug] [Thread-2 (]: Began running node model.service_desk_analytics.dim_canal
+[0m02:14:30.839225 [debug] [Thread-3 (]: Began running node model.service_desk_analytics.dim_categoria
+[0m02:14:30.840085 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.dim_prioridade
+[0m02:14:30.841409 [debug] [Thread-4 (]: Began running node model.service_desk_analytics.dim_status
+[0m02:14:30.842493 [info ] [Thread-2 (]: 4 of 8 SKIP relation raw_marts.dim_canal ....................................... [[33mSKIP[0m]
+[0m02:14:30.844218 [info ] [Thread-3 (]: 5 of 8 SKIP relation raw_marts.dim_categoria ................................... [[33mSKIP[0m]
+[0m02:14:30.846467 [info ] [Thread-1 (]: 6 of 8 SKIP relation raw_marts.dim_prioridade .................................. [[33mSKIP[0m]
+[0m02:14:30.849207 [info ] [Thread-4 (]: 7 of 8 SKIP relation raw_marts.dim_status ...................................... [[33mSKIP[0m]
+[0m02:14:30.854389 [debug] [Thread-2 (]: Finished running node model.service_desk_analytics.dim_canal
+[0m02:14:30.857177 [debug] [Thread-3 (]: Finished running node model.service_desk_analytics.dim_categoria
+[0m02:14:30.858682 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.dim_prioridade
+[0m02:14:30.860910 [debug] [Thread-4 (]: Finished running node model.service_desk_analytics.dim_status
+[0m02:14:30.867884 [debug] [Thread-2 (]: Began running node model.service_desk_analytics.fato_chamados
+[0m02:14:30.869315 [info ] [Thread-2 (]: 8 of 8 SKIP relation raw_marts.fato_chamados ................................... [[33mSKIP[0m]
+[0m02:14:30.870825 [debug] [Thread-2 (]: Finished running node model.service_desk_analytics.fato_chamados
+[0m02:14:30.875187 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:14:30.876374 [debug] [MainThread]: Connection 'model.service_desk_analytics.dim_tempo' was properly closed.
+[0m02:14:30.878128 [debug] [MainThread]: Connection 'model.service_desk_analytics.stg_chamados' was properly closed.
+[0m02:14:30.879126 [debug] [MainThread]: Connection 'list_service-desk-analytics-472019_raw_staging' was properly closed.
+[0m02:14:30.879838 [debug] [MainThread]: Connection 'model.service_desk_analytics.int_chamados' was properly closed.
+[0m02:14:30.880547 [info ] [MainThread]: 
+[0m02:14:30.881537 [info ] [MainThread]: Finished running 2 view models, 6 table models in 0 hours 0 minutes and 11.19 seconds (11.19s).
+[0m02:14:30.883489 [debug] [MainThread]: Command end result
+[0m02:14:30.945368 [info ] [MainThread]: 
+[0m02:14:30.946635 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m02:14:30.948127 [info ] [MainThread]: 
+[0m02:14:30.949800 [error] [MainThread]:   Database Error in model int_chamados (models/intermediate/int_chamados.sql)
+  Name tempo_espera not found inside stg at [18:9]
+  compiled Code at target/run/service_desk_analytics/models/intermediate/int_chamados.sql
+[0m02:14:30.950777 [info ] [MainThread]: 
+[0m02:14:30.951789 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=5 TOTAL=8
+[0m02:14:30.955138 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 14.882794, "process_user_time": 5.386424, "process_kernel_time": 2.036208, "process_mem_max_rss": "213028", "process_in_blocks": "271440", "process_out_blocks": "4504", "command_success": false}
+[0m02:14:30.956293 [debug] [MainThread]: Command `dbt run` failed at 02:14:30.956130 after 14.88 seconds
+[0m02:14:30.957279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce478a5150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce4b255250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce47dd7f10>]}
+[0m02:14:30.958268 [debug] [MainThread]: Flushing usage events
+[0m02:41:35.357650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e00bcf3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e00a04250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e00a0a190>]}
+
+
+============================== 02:41:35.371082 | 9862ed89-0c5f-4712-8f93-96f1ee70d6d4 ==============================
+[0m02:41:35.371082 [info ] [MainThread]: Running with dbt=1.8.0
+[0m02:41:35.372675 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app/dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/usr/app/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --target prod', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m02:41:37.982382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9862ed89-0c5f-4712-8f93-96f1ee70d6d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7dfcd741d0>]}
+[0m02:41:38.033489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9862ed89-0c5f-4712-8f93-96f1ee70d6d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e02920390>]}
+[0m02:41:38.034770 [info ] [MainThread]: Registered adapter: bigquery=1.8.0
+[0m02:41:38.055805 [debug] [MainThread]: checksum: b3c56ae100510f69e3c5cb21de5a14a249b030b632caca0456cb9cfa1123b0a0, vars: {}, profile: , target: prod, version: 1.8.0
+[0m02:41:38.295230 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m02:41:38.296415 [debug] [MainThread]: Partial parsing: updated file: service_desk_analytics://models/intermediate/int_chamados.sql
+[0m02:41:38.595989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9862ed89-0c5f-4712-8f93-96f1ee70d6d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7dde7c1310>]}
+[0m02:41:38.744681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9862ed89-0c5f-4712-8f93-96f1ee70d6d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7dde42ed10>]}
+[0m02:41:38.745586 [info ] [MainThread]: Found 8 models, 5 data tests, 1 source, 469 macros
+[0m02:41:38.746705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9862ed89-0c5f-4712-8f93-96f1ee70d6d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7dde62e290>]}
+[0m02:41:38.750185 [info ] [MainThread]: 
+[0m02:41:38.751802 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m02:41:38.763071 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m02:41:38.765699 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m02:41:38.768310 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:41:38.769546 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m02:41:38.770822 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:41:38.773544 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:41:39.773688 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now list_service-desk-analytics-472019_raw_intermediate)
+[0m02:41:39.775976 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now list_service-desk-analytics-472019_raw_staging)
+[0m02:41:39.777847 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now list_service-desk-analytics-472019_raw_marts)
+[0m02:41:39.779539 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:41:39.781914 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:41:39.783633 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:41:40.795022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9862ed89-0c5f-4712-8f93-96f1ee70d6d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7dde672fd0>]}
+[0m02:41:40.797849 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m02:41:40.800032 [info ] [MainThread]: 
+[0m02:41:40.830714 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.dim_tempo
+[0m02:41:40.832154 [debug] [Thread-2 (]: Began running node model.service_desk_analytics.stg_chamados
+[0m02:41:40.834703 [info ] [Thread-1 (]: 1 of 8 START sql table model raw_marts.dim_tempo ............................... [RUN]
+[0m02:41:40.837114 [info ] [Thread-2 (]: 2 of 8 START sql view model raw_staging.stg_chamados ........................... [RUN]
+[0m02:41:40.839809 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_staging, now model.service_desk_analytics.dim_tempo)
+[0m02:41:40.841627 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_marts, now model.service_desk_analytics.stg_chamados)
+[0m02:41:40.843567 [debug] [Thread-1 (]: Began compiling node model.service_desk_analytics.dim_tempo
+[0m02:41:40.845215 [debug] [Thread-2 (]: Began compiling node model.service_desk_analytics.stg_chamados
+[0m02:41:40.870082 [debug] [Thread-1 (]: Writing injected SQL for node "model.service_desk_analytics.dim_tempo"
+[0m02:41:40.866125 [debug] [Thread-2 (]: Writing injected SQL for node "model.service_desk_analytics.stg_chamados"
+[0m02:41:40.875937 [debug] [Thread-1 (]: Began executing node model.service_desk_analytics.dim_tempo
+[0m02:41:40.876863 [debug] [Thread-2 (]: Began executing node model.service_desk_analytics.stg_chamados
+[0m02:41:40.896189 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:41:40.927748 [debug] [Thread-2 (]: Writing runtime sql for node "model.service_desk_analytics.stg_chamados"
+[0m02:41:40.966730 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m02:41:40.970732 [debug] [Thread-2 (]: On model.service_desk_analytics.stg_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.stg_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_staging`.`stg_chamados`
+  OPTIONS()
+  as 
+
+WITH raw_data AS (
+    SELECT * FROM `service-desk-analytics-472019`.`raw`.`chamados`
+),
+
+cleaned AS (
+    SELECT
+        -- IDs e Datas (validação básica)
+        id_chamado,
+        CAST(data_abertura AS TIMESTAMP) AS data_abertura,
+        CAST(data_fechamento AS TIMESTAMP) AS data_fechamento,
+        
+        -- Categorias (padronização)
+        UPPER(TRIM(categoria)) AS categoria,
+        INITCAP(TRIM(canal)) AS canal,
+        
+        -- Prioridade (tratamento de nulos e padronização)
+        CASE 
+            WHEN prioridade IS NULL THEN 'NÃO_INFORMADA'
+            ELSE INITCAP(TRIM(prioridade))
+        END AS prioridade,
+        
+        -- Status (validação)
+        CASE 
+            WHEN status IN ('Aberto', 'Em andamento', 'Fechado') THEN status
+            ELSE 'STATUS_DESCONHECIDO'
+        END AS status,
+        
+        -- Métricas numéricas (tratamento de outliers)
+        CAST(tempo_espera AS NUMERIC) AS tempo_espera_minutos,
+        CAST(tempo_resolucao AS NUMERIC) AS tempo_resolucao_horas,
+        
+        -- CSAT (valores válidos 1-5, nulos tratados)
+        CASE 
+            WHEN csat BETWEEN 1 AND 5 THEN csat
+            ELSE NULL
+        END AS csat_score,
+        
+        -- Flags booleanas (garantir consistência)
+        CAST(sla_atingido AS BOOLEAN) AS is_sla_atingido,
+        CAST(first_contact_resolution AS BOOLEAN) AS is_first_contact,
+        
+        -- Metadados para qualidade
+        CURRENT_TIMESTAMP() AS dbt_loaded_at
+
+    FROM raw_data
+)
+
+SELECT * FROM cleaned;
+
+
+[0m02:41:42.082947 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:1a7eefd9-5ecc-4449-ab54-7389d71ee127&page=queryresults
+[0m02:41:42.120678 [debug] [Thread-1 (]: Writing runtime sql for node "model.service_desk_analytics.dim_tempo"
+[0m02:41:42.125750 [debug] [Thread-1 (]: On model.service_desk_analytics.dim_tempo: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.dim_tempo"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`dim_tempo`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+WITH dates AS (
+    SELECT *
+    FROM unnest(generate_date_array('2020-01-01', current_date(), interval 1 day)) AS data
+)
+
+SELECT
+    row_number() OVER(ORDER BY data) AS id_tempo,
+    data,
+    EXTRACT(year FROM data) AS ano,
+    EXTRACT(quarter FROM data) AS trimestre,
+    EXTRACT(month FROM data) AS mes,
+    format_date('%Y-%m', data) AS ano_mes,
+    EXTRACT(day FROM data) AS dia,
+    EXTRACT(dayofweek FROM data) AS dia_semana,
+    CASE EXTRACT(dayofweek FROM data)
+        WHEN 1 THEN 'Domingo'
+        WHEN 2 THEN 'Segunda'
+        WHEN 3 THEN 'Terça'
+        WHEN 4 THEN 'Quarta'
+        WHEN 5 THEN 'Quinta'
+        WHEN 6 THEN 'Sexta'
+        WHEN 7 THEN 'Sábado'
+    END AS nome_dia_semana
+FROM dates
+    );
+  
+[0m02:41:42.586488 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:07b7bb97-08d2-4e08-8f51-da36339e5790&page=queryresults
+[0m02:41:42.652193 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9862ed89-0c5f-4712-8f93-96f1ee70d6d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7dde490190>]}
+[0m02:41:42.654207 [info ] [Thread-2 (]: 2 of 8 OK created sql view model raw_staging.stg_chamados ...................... [[32mCREATE VIEW (0 processed)[0m in 1.81s]
+[0m02:41:42.656721 [debug] [Thread-2 (]: Finished running node model.service_desk_analytics.stg_chamados
+[0m02:41:42.659448 [debug] [Thread-4 (]: Began running node model.service_desk_analytics.int_chamados
+[0m02:41:42.661066 [info ] [Thread-4 (]: 3 of 8 START sql view model raw_intermediate.int_chamados ...................... [RUN]
+[0m02:41:42.663433 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.service_desk_analytics.int_chamados'
+[0m02:41:42.665647 [debug] [Thread-4 (]: Began compiling node model.service_desk_analytics.int_chamados
+[0m02:41:42.674963 [debug] [Thread-4 (]: Writing injected SQL for node "model.service_desk_analytics.int_chamados"
+[0m02:41:42.678759 [debug] [Thread-4 (]: Began executing node model.service_desk_analytics.int_chamados
+[0m02:41:42.684604 [debug] [Thread-4 (]: Writing runtime sql for node "model.service_desk_analytics.int_chamados"
+[0m02:41:42.688361 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m02:41:42.692255 [debug] [Thread-4 (]: On model.service_desk_analytics.int_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.int_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados`
+  OPTIONS()
+  as 
+
+SELECT
+    stg.id_chamado,
+    stg.data_abertura,
+    stg.data_fechamento,
+    date(stg.data_abertura) AS dt_abertura,
+    date(stg.data_fechamento) AS dt_fechamento,
+    stg.categoria,
+    stg.canal,
+    stg.prioridade,
+    stg.status,
+    stg.tempo_espera_minutos,
+    stg.tempo_resolucao,
+    stg.csat,
+    stg.sla_atingido,
+    stg.first_contact_resolution
+FROM `service-desk-analytics-472019`.`raw_staging`.`stg_chamados` stg;
+
+
+[0m02:41:44.030716 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:35273202-54a6-41f6-906b-c0bbee419295&page=queryresults
+[0m02:41:44.282527 [debug] [Thread-4 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Name tempo_resolucao not found inside stg at [19:9]; reason: invalidQuery, location: query, message: Name tempo_resolucao not found inside stg at [19:9]')
+[0m02:41:44.759857 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9862ed89-0c5f-4712-8f93-96f1ee70d6d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7dde6721d0>]}
+[0m02:41:44.762872 [info ] [Thread-1 (]: 1 of 8 OK created sql table model raw_marts.dim_tempo .......................... [[32mCREATE TABLE (2.1k rows, 0 processed)[0m in 3.92s]
+[0m02:41:44.766338 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.dim_tempo
+[0m02:41:45.155157 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:782fd63f-bbd5-44aa-a62b-419a5ebf16cd&page=queryresults
+[0m02:41:45.420981 [error] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:782fd63f-bbd5-44aa-a62b-419a5ebf16cd&page=queryresults
+[0m02:41:45.458118 [debug] [Thread-4 (]: Database Error in model int_chamados (models/intermediate/int_chamados.sql)
+  Name tempo_resolucao not found inside stg at [19:9]
+  compiled Code at target/run/service_desk_analytics/models/intermediate/int_chamados.sql
+[0m02:41:45.459735 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9862ed89-0c5f-4712-8f93-96f1ee70d6d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7dddf1c710>]}
+[0m02:41:45.461678 [error] [Thread-4 (]: 3 of 8 ERROR creating sql view model raw_intermediate.int_chamados ............. [[31mERROR[0m in 2.80s]
+[0m02:41:45.464125 [debug] [Thread-4 (]: Finished running node model.service_desk_analytics.int_chamados
+[0m02:41:45.469088 [debug] [Thread-2 (]: Began running node model.service_desk_analytics.dim_canal
+[0m02:41:45.470146 [debug] [Thread-3 (]: Began running node model.service_desk_analytics.dim_categoria
+[0m02:41:45.471423 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.dim_prioridade
+[0m02:41:45.473558 [debug] [Thread-4 (]: Began running node model.service_desk_analytics.dim_status
+[0m02:41:45.475038 [info ] [Thread-2 (]: 4 of 8 SKIP relation raw_marts.dim_canal ....................................... [[33mSKIP[0m]
+[0m02:41:45.478887 [info ] [Thread-3 (]: 5 of 8 SKIP relation raw_marts.dim_categoria ................................... [[33mSKIP[0m]
+[0m02:41:45.488637 [debug] [Thread-3 (]: Finished running node model.service_desk_analytics.dim_categoria
+[0m02:41:45.485019 [info ] [Thread-4 (]: 7 of 8 SKIP relation raw_marts.dim_status ...................................... [[33mSKIP[0m]
+[0m02:41:45.487007 [debug] [Thread-2 (]: Finished running node model.service_desk_analytics.dim_canal
+[0m02:41:45.482131 [info ] [Thread-1 (]: 6 of 8 SKIP relation raw_marts.dim_prioridade .................................. [[33mSKIP[0m]
+[0m02:41:45.493225 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.dim_prioridade
+[0m02:41:45.490952 [debug] [Thread-4 (]: Finished running node model.service_desk_analytics.dim_status
+[0m02:41:45.496218 [debug] [Thread-3 (]: Began running node model.service_desk_analytics.fato_chamados
+[0m02:41:45.498044 [info ] [Thread-3 (]: 8 of 8 SKIP relation raw_marts.fato_chamados ................................... [[33mSKIP[0m]
+[0m02:41:45.501108 [debug] [Thread-3 (]: Finished running node model.service_desk_analytics.fato_chamados
+[0m02:41:45.506530 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:41:45.507519 [debug] [MainThread]: Connection 'model.service_desk_analytics.stg_chamados' was properly closed.
+[0m02:41:45.508264 [debug] [MainThread]: Connection 'list_service-desk-analytics-472019_raw_intermediate' was properly closed.
+[0m02:41:45.508844 [debug] [MainThread]: Connection 'model.service_desk_analytics.dim_tempo' was properly closed.
+[0m02:41:45.509494 [debug] [MainThread]: Connection 'model.service_desk_analytics.int_chamados' was properly closed.
+[0m02:41:45.510459 [info ] [MainThread]: 
+[0m02:41:45.511329 [info ] [MainThread]: Finished running 2 view models, 6 table models in 0 hours 0 minutes and 6.76 seconds (6.76s).
+[0m02:41:45.513126 [debug] [MainThread]: Command end result
+[0m02:41:45.579598 [info ] [MainThread]: 
+[0m02:41:45.580821 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m02:41:45.582253 [info ] [MainThread]: 
+[0m02:41:45.583389 [error] [MainThread]:   Database Error in model int_chamados (models/intermediate/int_chamados.sql)
+  Name tempo_resolucao not found inside stg at [19:9]
+  compiled Code at target/run/service_desk_analytics/models/intermediate/int_chamados.sql
+[0m02:41:45.584310 [info ] [MainThread]: 
+[0m02:41:45.585326 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=5 TOTAL=8
+[0m02:41:45.588572 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 10.3082, "process_user_time": 4.80962, "process_kernel_time": 1.956474, "process_mem_max_rss": "211928", "process_in_blocks": "271440", "process_out_blocks": "4500", "command_success": false}
+[0m02:41:45.589556 [debug] [MainThread]: Command `dbt run` failed at 02:41:45.589414 after 10.31 seconds
+[0m02:41:45.590461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e00a0ad90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e00a09b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e043a1110>]}
+[0m02:41:45.591375 [debug] [MainThread]: Flushing usage events
+[0m02:44:17.217696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8580634d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc85959ea50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc858027190>]}
+
+
+============================== 02:44:17.225215 | dc6047bf-5764-4b50-897c-8e0f60375e96 ==============================
+[0m02:44:17.225215 [info ] [MainThread]: Running with dbt=1.8.0
+[0m02:44:17.227234 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app/dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/usr/app/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --target prod', 'send_anonymous_usage_stats': 'True'}
+[0m02:44:18.245475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8580252d0>]}
+[0m02:44:18.298371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc859fafc90>]}
+[0m02:44:18.299852 [info ] [MainThread]: Registered adapter: bigquery=1.8.0
+[0m02:44:18.317882 [debug] [MainThread]: checksum: b3c56ae100510f69e3c5cb21de5a14a249b030b632caca0456cb9cfa1123b0a0, vars: {}, profile: , target: prod, version: 1.8.0
+[0m02:44:18.481734 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m02:44:18.482812 [debug] [MainThread]: Partial parsing: updated file: service_desk_analytics://models/intermediate/int_chamados.sql
+[0m02:44:18.789602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc858471310>]}
+[0m02:44:18.920204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc839c67ad0>]}
+[0m02:44:18.921112 [info ] [MainThread]: Found 8 models, 5 data tests, 1 source, 469 macros
+[0m02:44:18.921865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc839ae66d0>]}
+[0m02:44:18.924643 [info ] [MainThread]: 
+[0m02:44:18.925728 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m02:44:18.932892 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m02:44:18.934686 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m02:44:18.935906 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:44:18.936579 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m02:44:18.937492 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:44:18.940629 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:44:19.933689 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now list_service-desk-analytics-472019_raw_staging)
+[0m02:44:19.935602 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now list_service-desk-analytics-472019_raw_intermediate)
+[0m02:44:19.937615 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now list_service-desk-analytics-472019_raw_marts)
+[0m02:44:19.938518 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:44:19.940431 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:44:19.942086 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:44:21.052000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc839c412d0>]}
+[0m02:44:21.054861 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m02:44:21.056935 [info ] [MainThread]: 
+[0m02:44:21.089721 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.dim_tempo
+[0m02:44:21.090711 [debug] [Thread-2 (]: Began running node model.service_desk_analytics.stg_chamados
+[0m02:44:21.092579 [info ] [Thread-1 (]: 1 of 8 START sql table model raw_marts.dim_tempo ............................... [RUN]
+[0m02:44:21.094673 [info ] [Thread-2 (]: 2 of 8 START sql view model raw_staging.stg_chamados ........................... [RUN]
+[0m02:44:21.098009 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_marts, now model.service_desk_analytics.dim_tempo)
+[0m02:44:21.099821 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_intermediate, now model.service_desk_analytics.stg_chamados)
+[0m02:44:21.101762 [debug] [Thread-1 (]: Began compiling node model.service_desk_analytics.dim_tempo
+[0m02:44:21.103793 [debug] [Thread-2 (]: Began compiling node model.service_desk_analytics.stg_chamados
+[0m02:44:21.130930 [debug] [Thread-1 (]: Writing injected SQL for node "model.service_desk_analytics.dim_tempo"
+[0m02:44:21.132246 [debug] [Thread-2 (]: Writing injected SQL for node "model.service_desk_analytics.stg_chamados"
+[0m02:44:21.136390 [debug] [Thread-1 (]: Began executing node model.service_desk_analytics.dim_tempo
+[0m02:44:21.137094 [debug] [Thread-2 (]: Began executing node model.service_desk_analytics.stg_chamados
+[0m02:44:21.155444 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:44:21.184843 [debug] [Thread-2 (]: Writing runtime sql for node "model.service_desk_analytics.stg_chamados"
+[0m02:44:21.221348 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m02:44:21.224576 [debug] [Thread-2 (]: On model.service_desk_analytics.stg_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.stg_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_staging`.`stg_chamados`
+  OPTIONS()
+  as 
+
+WITH raw_data AS (
+    SELECT * FROM `service-desk-analytics-472019`.`raw`.`chamados`
+),
+
+cleaned AS (
+    SELECT
+        -- IDs e Datas (validação básica)
+        id_chamado,
+        CAST(data_abertura AS TIMESTAMP) AS data_abertura,
+        CAST(data_fechamento AS TIMESTAMP) AS data_fechamento,
+        
+        -- Categorias (padronização)
+        UPPER(TRIM(categoria)) AS categoria,
+        INITCAP(TRIM(canal)) AS canal,
+        
+        -- Prioridade (tratamento de nulos e padronização)
+        CASE 
+            WHEN prioridade IS NULL THEN 'NÃO_INFORMADA'
+            ELSE INITCAP(TRIM(prioridade))
+        END AS prioridade,
+        
+        -- Status (validação)
+        CASE 
+            WHEN status IN ('Aberto', 'Em andamento', 'Fechado') THEN status
+            ELSE 'STATUS_DESCONHECIDO'
+        END AS status,
+        
+        -- Métricas numéricas (tratamento de outliers)
+        CAST(tempo_espera AS NUMERIC) AS tempo_espera_minutos,
+        CAST(tempo_resolucao AS NUMERIC) AS tempo_resolucao_horas,
+        
+        -- CSAT (valores válidos 1-5, nulos tratados)
+        CASE 
+            WHEN csat BETWEEN 1 AND 5 THEN csat
+            ELSE NULL
+        END AS csat_score,
+        
+        -- Flags booleanas (garantir consistência)
+        CAST(sla_atingido AS BOOLEAN) AS is_sla_atingido,
+        CAST(first_contact_resolution AS BOOLEAN) AS is_first_contact,
+        
+        -- Metadados para qualidade
+        CURRENT_TIMESTAMP() AS dbt_loaded_at
+
+    FROM raw_data
+)
+
+SELECT * FROM cleaned;
+
+
+[0m02:44:22.094972 [debug] [Thread-1 (]: Writing runtime sql for node "model.service_desk_analytics.dim_tempo"
+[0m02:44:22.099939 [debug] [Thread-1 (]: On model.service_desk_analytics.dim_tempo: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.dim_tempo"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`dim_tempo`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+WITH dates AS (
+    SELECT *
+    FROM unnest(generate_date_array('2020-01-01', current_date(), interval 1 day)) AS data
+)
+
+SELECT
+    row_number() OVER(ORDER BY data) AS id_tempo,
+    data,
+    EXTRACT(year FROM data) AS ano,
+    EXTRACT(quarter FROM data) AS trimestre,
+    EXTRACT(month FROM data) AS mes,
+    format_date('%Y-%m', data) AS ano_mes,
+    EXTRACT(day FROM data) AS dia,
+    EXTRACT(dayofweek FROM data) AS dia_semana,
+    CASE EXTRACT(dayofweek FROM data)
+        WHEN 1 THEN 'Domingo'
+        WHEN 2 THEN 'Segunda'
+        WHEN 3 THEN 'Terça'
+        WHEN 4 THEN 'Quarta'
+        WHEN 5 THEN 'Quinta'
+        WHEN 6 THEN 'Sexta'
+        WHEN 7 THEN 'Sábado'
+    END AS nome_dia_semana
+FROM dates
+    );
+  
+[0m02:44:22.203979 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:9bc6d6c2-2cb7-4703-ab59-f59c290a2015&page=queryresults
+[0m02:44:22.823284 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:7217e678-34eb-4034-a11c-7a14695aeeee&page=queryresults
+[0m02:44:22.857440 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc839c88fd0>]}
+[0m02:44:22.859452 [info ] [Thread-2 (]: 2 of 8 OK created sql view model raw_staging.stg_chamados ...................... [[32mCREATE VIEW (0 processed)[0m in 1.76s]
+[0m02:44:22.861863 [debug] [Thread-2 (]: Finished running node model.service_desk_analytics.stg_chamados
+[0m02:44:22.864444 [debug] [Thread-4 (]: Began running node model.service_desk_analytics.int_chamados
+[0m02:44:22.866103 [info ] [Thread-4 (]: 3 of 8 START sql view model raw_intermediate.int_chamados ...................... [RUN]
+[0m02:44:22.868482 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.service_desk_analytics.int_chamados'
+[0m02:44:22.870498 [debug] [Thread-4 (]: Began compiling node model.service_desk_analytics.int_chamados
+[0m02:44:22.878585 [debug] [Thread-4 (]: Writing injected SQL for node "model.service_desk_analytics.int_chamados"
+[0m02:44:22.883470 [debug] [Thread-4 (]: Began executing node model.service_desk_analytics.int_chamados
+[0m02:44:22.890468 [debug] [Thread-4 (]: Writing runtime sql for node "model.service_desk_analytics.int_chamados"
+[0m02:44:22.896826 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m02:44:22.900699 [debug] [Thread-4 (]: On model.service_desk_analytics.int_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.int_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados`
+  OPTIONS()
+  as 
+
+SELECT
+    stg.id_chamado,
+    stg.data_abertura,
+    stg.data_fechamento,
+    date(stg.data_abertura) AS dt_abertura,
+    date(stg.data_fechamento) AS dt_fechamento,
+    stg.categoria,
+    stg.canal,
+    stg.prioridade,
+    stg.status,
+    stg.tempo_espera_minutos,
+    stg.tempo_resolucao_horas,
+    stg.csat_score,
+    stg.is_sla_atingido,
+    stg.is_first_contact
+FROM `service-desk-analytics-472019`.`raw_staging`.`stg_chamados` stg;
+
+
+[0m02:44:24.064495 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:bf8ab9b3-cebd-4bf7-a2a2-1fbed6a0b822&page=queryresults
+[0m02:44:24.602444 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8399f0990>]}
+[0m02:44:24.605290 [info ] [Thread-4 (]: 3 of 8 OK created sql view model raw_intermediate.int_chamados ................. [[32mCREATE VIEW (0 processed)[0m in 1.73s]
+[0m02:44:24.608627 [debug] [Thread-4 (]: Finished running node model.service_desk_analytics.int_chamados
+[0m02:44:24.612359 [debug] [Thread-2 (]: Began running node model.service_desk_analytics.dim_canal
+[0m02:44:24.613471 [debug] [Thread-3 (]: Began running node model.service_desk_analytics.dim_categoria
+[0m02:44:24.614569 [debug] [Thread-4 (]: Began running node model.service_desk_analytics.dim_prioridade
+[0m02:44:24.615943 [info ] [Thread-2 (]: 4 of 8 START sql table model raw_marts.dim_canal ............................... [RUN]
+[0m02:44:24.619612 [info ] [Thread-3 (]: 5 of 8 START sql table model raw_marts.dim_categoria ........................... [RUN]
+[0m02:44:24.624042 [info ] [Thread-4 (]: 6 of 8 START sql table model raw_marts.dim_prioridade .......................... [RUN]
+[0m02:44:24.627989 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.service_desk_analytics.stg_chamados, now model.service_desk_analytics.dim_canal)
+[0m02:44:24.630177 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_staging, now model.service_desk_analytics.dim_categoria)
+[0m02:44:24.632891 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.service_desk_analytics.int_chamados, now model.service_desk_analytics.dim_prioridade)
+[0m02:44:24.634733 [debug] [Thread-2 (]: Began compiling node model.service_desk_analytics.dim_canal
+[0m02:44:24.636392 [debug] [Thread-3 (]: Began compiling node model.service_desk_analytics.dim_categoria
+[0m02:44:24.638207 [debug] [Thread-4 (]: Began compiling node model.service_desk_analytics.dim_prioridade
+[0m02:44:24.657885 [debug] [Thread-3 (]: Writing injected SQL for node "model.service_desk_analytics.dim_categoria"
+[0m02:44:24.657042 [debug] [Thread-2 (]: Writing injected SQL for node "model.service_desk_analytics.dim_canal"
+[0m02:44:24.664972 [debug] [Thread-4 (]: Writing injected SQL for node "model.service_desk_analytics.dim_prioridade"
+[0m02:44:24.668831 [debug] [Thread-3 (]: Began executing node model.service_desk_analytics.dim_categoria
+[0m02:44:24.674316 [debug] [Thread-3 (]: Writing runtime sql for node "model.service_desk_analytics.dim_categoria"
+[0m02:44:24.675156 [debug] [Thread-4 (]: Began executing node model.service_desk_analytics.dim_prioridade
+[0m02:44:24.675804 [debug] [Thread-2 (]: Began executing node model.service_desk_analytics.dim_canal
+[0m02:44:24.680891 [debug] [Thread-4 (]: Writing runtime sql for node "model.service_desk_analytics.dim_prioridade"
+[0m02:44:24.685608 [debug] [Thread-2 (]: Writing runtime sql for node "model.service_desk_analytics.dim_canal"
+[0m02:44:24.686334 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m02:44:24.690200 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m02:44:24.690728 [debug] [Thread-3 (]: On model.service_desk_analytics.dim_categoria: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.dim_categoria"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`dim_categoria`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select
+    row_number() over(order by categoria) as id_categoria,
+    categoria
+from (
+    select distinct categoria from `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados`
+) t
+    );
+  
+[0m02:44:24.691180 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m02:44:24.727408 [debug] [Thread-4 (]: On model.service_desk_analytics.dim_prioridade: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.dim_prioridade"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`dim_prioridade`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+    row_number() OVER(ORDER BY prioridade) AS id_prioridade,
+    prioridade
+FROM (
+    SELECT DISTINCT prioridade FROM `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados`
+) t
+    );
+  
+[0m02:44:24.765760 [debug] [Thread-2 (]: On model.service_desk_analytics.dim_canal: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.dim_canal"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`dim_canal`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+    row_number() OVER(ORDER BY canal) AS id_canal,
+    canal
+FROM (
+    SELECT DISTINCT canal FROM `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados`
+) t
+    );
+  
+[0m02:44:24.804458 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8399e7ed0>]}
+[0m02:44:24.805986 [info ] [Thread-1 (]: 1 of 8 OK created sql table model raw_marts.dim_tempo .......................... [[32mCREATE TABLE (2.1k rows, 0 processed)[0m in 3.71s]
+[0m02:44:24.807499 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.dim_tempo
+[0m02:44:24.808375 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.dim_status
+[0m02:44:24.809228 [info ] [Thread-1 (]: 7 of 8 START sql table model raw_marts.dim_status .............................. [RUN]
+[0m02:44:24.810221 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.service_desk_analytics.dim_tempo, now model.service_desk_analytics.dim_status)
+[0m02:44:24.811029 [debug] [Thread-1 (]: Began compiling node model.service_desk_analytics.dim_status
+[0m02:44:24.815474 [debug] [Thread-1 (]: Writing injected SQL for node "model.service_desk_analytics.dim_status"
+[0m02:44:24.818492 [debug] [Thread-1 (]: Began executing node model.service_desk_analytics.dim_status
+[0m02:44:24.823528 [debug] [Thread-1 (]: Writing runtime sql for node "model.service_desk_analytics.dim_status"
+[0m02:44:24.825913 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:44:24.828663 [debug] [Thread-1 (]: On model.service_desk_analytics.dim_status: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.dim_status"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`dim_status`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+    row_number() OVER(ORDER BY status) AS id_status,
+    status
+FROM (
+    SELECT DISTINCT status FROM `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados`
+) t
+    );
+  
+[0m02:44:25.912859 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:f603bb6d-eb4c-40e8-be39-e862a95505fd&page=queryresults
+[0m02:44:25.927662 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:f9a41e1b-15a8-42da-888e-aad2a7adf06d&page=queryresults
+[0m02:44:26.020970 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:165640f7-5b40-4bf6-9de2-dbd395cbeb2e&page=queryresults
+[0m02:44:26.206957 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:cbcb7299-ebf2-4a07-83a0-618184f28979&page=queryresults
+[0m02:44:28.103464 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8395a1390>]}
+[0m02:44:28.106025 [info ] [Thread-4 (]: 6 of 8 OK created sql table model raw_marts.dim_prioridade ..................... [[32mCREATE TABLE (5.0 rows, 4.3 KiB processed)[0m in 3.47s]
+[0m02:44:28.108912 [debug] [Thread-4 (]: Finished running node model.service_desk_analytics.dim_prioridade
+[0m02:44:28.187475 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8395e20d0>]}
+[0m02:44:28.190069 [info ] [Thread-3 (]: 5 of 8 OK created sql table model raw_marts.dim_categoria ...................... [[32mCREATE TABLE (4.0 rows, 6.0 KiB processed)[0m in 3.56s]
+[0m02:44:28.193448 [debug] [Thread-3 (]: Finished running node model.service_desk_analytics.dim_categoria
+[0m02:44:28.459593 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8395c9d90>]}
+[0m02:44:28.462962 [info ] [Thread-2 (]: 4 of 8 OK created sql table model raw_marts.dim_canal .......................... [[32mCREATE TABLE (4.0 rows, 5.3 KiB processed)[0m in 3.83s]
+[0m02:44:28.465622 [debug] [Thread-2 (]: Finished running node model.service_desk_analytics.dim_canal
+[0m02:44:28.666913 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8395d7c10>]}
+[0m02:44:28.669730 [info ] [Thread-1 (]: 7 of 8 OK created sql table model raw_marts.dim_status ......................... [[32mCREATE TABLE (3.0 rows, 6.0 KiB processed)[0m in 3.86s]
+[0m02:44:28.673320 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.dim_status
+[0m02:44:28.678142 [debug] [Thread-4 (]: Began running node model.service_desk_analytics.fato_chamados
+[0m02:44:28.680479 [info ] [Thread-4 (]: 8 of 8 START sql table model raw_marts.fato_chamados ........................... [RUN]
+[0m02:44:28.683632 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.service_desk_analytics.dim_prioridade, now model.service_desk_analytics.fato_chamados)
+[0m02:44:28.685653 [debug] [Thread-4 (]: Began compiling node model.service_desk_analytics.fato_chamados
+[0m02:44:28.697013 [debug] [Thread-4 (]: Writing injected SQL for node "model.service_desk_analytics.fato_chamados"
+[0m02:44:28.703313 [debug] [Thread-4 (]: Began executing node model.service_desk_analytics.fato_chamados
+[0m02:44:28.709260 [debug] [Thread-4 (]: Writing runtime sql for node "model.service_desk_analytics.fato_chamados"
+[0m02:44:28.715173 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m02:44:28.721386 [debug] [Thread-4 (]: On model.service_desk_analytics.fato_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.fato_chamados"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`fato_chamados`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with base as (
+    select
+        int.id_chamado,
+        t_ab.id_tempo as id_tempo_abertura,
+        t_fc.id_tempo as id_tempo_fechamento,
+        dcat.id_categoria,
+        dcan.id_canal,
+        dpri.id_prioridade,
+        dsta.id_status,
+        int.tempo_espera,
+        int.tempo_resolucao,
+        int.csat,
+        int.sla_atingido,
+        int.first_contact_resolution
+    from `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados` int
+    left join `service-desk-analytics-472019`.`raw_marts`.`dim_tempo` t_ab
+        on int.dt_abertura = t_ab.data
+    left join `service-desk-analytics-472019`.`raw_marts`.`dim_tempo` t_fc
+        on int.dt_fechamento = t_fc.data
+    left join `service-desk-analytics-472019`.`raw_marts`.`dim_categoria` dcat
+        on int.categoria = dcat.categoria
+    left join `service-desk-analytics-472019`.`raw_marts`.`dim_canal` dcan
+        on int.canal = dcan.canal
+    left join `service-desk-analytics-472019`.`raw_marts`.`dim_prioridade` dpri
+        on int.prioridade = dpri.prioridade
+    left join `service-desk-analytics-472019`.`raw_marts`.`dim_status` dsta
+        on int.status = dsta.status
+)
+
+select * from base
+    );
+  
+[0m02:44:29.981516 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:2f58a07d-997f-47fc-a4ea-d4f20896cd0e&page=queryresults
+[0m02:44:30.224122 [debug] [Thread-4 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Name tempo_espera not found inside int at [24:13]; reason: invalidQuery, location: query, message: Name tempo_espera not found inside int at [24:13]')
+[0m02:44:31.008433 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:19d904b1-d7fa-40a5-95f0-a68be868af14&page=queryresults
+[0m02:44:31.253072 [error] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:19d904b1-d7fa-40a5-95f0-a68be868af14&page=queryresults
+[0m02:44:31.267310 [debug] [Thread-4 (]: Database Error in model fato_chamados (models/marts/fato_chamados.sql)
+  Name tempo_espera not found inside int at [24:13]
+  compiled Code at target/run/service_desk_analytics/models/marts/fato_chamados.sql
+[0m02:44:31.269436 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc6047bf-5764-4b50-897c-8e0f60375e96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc839163410>]}
+[0m02:44:31.271498 [error] [Thread-4 (]: 8 of 8 ERROR creating sql table model raw_marts.fato_chamados .................. [[31mERROR[0m in 2.59s]
+[0m02:44:31.274267 [debug] [Thread-4 (]: Finished running node model.service_desk_analytics.fato_chamados
+[0m02:44:31.281717 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:44:31.283622 [debug] [MainThread]: Connection 'model.service_desk_analytics.dim_canal' was properly closed.
+[0m02:44:31.285396 [debug] [MainThread]: Connection 'model.service_desk_analytics.dim_categoria' was properly closed.
+[0m02:44:31.286931 [debug] [MainThread]: Connection 'model.service_desk_analytics.dim_status' was properly closed.
+[0m02:44:31.288959 [debug] [MainThread]: Connection 'model.service_desk_analytics.fato_chamados' was properly closed.
+[0m02:44:31.290591 [info ] [MainThread]: 
+[0m02:44:31.292288 [info ] [MainThread]: Finished running 2 view models, 6 table models in 0 hours 0 minutes and 12.36 seconds (12.36s).
+[0m02:44:31.296956 [debug] [MainThread]: Command end result
+[0m02:44:31.366248 [info ] [MainThread]: 
+[0m02:44:31.367901 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m02:44:31.369078 [info ] [MainThread]: 
+[0m02:44:31.370208 [error] [MainThread]:   Database Error in model fato_chamados (models/marts/fato_chamados.sql)
+  Name tempo_espera not found inside int at [24:13]
+  compiled Code at target/run/service_desk_analytics/models/marts/fato_chamados.sql
+[0m02:44:31.371175 [info ] [MainThread]: 
+[0m02:44:31.372172 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=1 SKIP=0 TOTAL=8
+[0m02:44:31.374178 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 14.208623, "process_user_time": 5.182904, "process_kernel_time": 1.494785, "process_mem_max_rss": "213072", "process_out_blocks": "4546", "command_success": false, "process_in_blocks": "0"}
+[0m02:44:31.375203 [debug] [MainThread]: Command `dbt run` failed at 02:44:31.375057 after 14.21 seconds
+[0m02:44:31.375936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc858063090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc85804f110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc85806c110>]}
+[0m02:44:31.376688 [debug] [MainThread]: Flushing usage events
+[0m02:47:48.892492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a54cb7a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a54cf2210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a54cf1190>]}
+
+
+============================== 02:47:48.899519 | 22b72729-df60-4e36-a9ed-439e3cbba696 ==============================
+[0m02:47:48.899519 [info ] [MainThread]: Running with dbt=1.8.0
+[0m02:47:48.901056 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app/dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/usr/app/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --target prod', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m02:47:49.869169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a33b3f690>]}
+[0m02:47:49.921190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a56bdc4d0>]}
+[0m02:47:49.922606 [info ] [MainThread]: Registered adapter: bigquery=1.8.0
+[0m02:47:49.940757 [debug] [MainThread]: checksum: b3c56ae100510f69e3c5cb21de5a14a249b030b632caca0456cb9cfa1123b0a0, vars: {}, profile: , target: prod, version: 1.8.0
+[0m02:47:50.098036 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m02:47:50.099378 [debug] [MainThread]: Partial parsing: updated file: service_desk_analytics://models/marts/fato_chamados.sql
+[0m02:47:50.440081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a55c25a50>]}
+[0m02:47:50.581378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a327b1990>]}
+[0m02:47:50.582300 [info ] [MainThread]: Found 8 models, 5 data tests, 1 source, 469 macros
+[0m02:47:50.583024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a54e09b10>]}
+[0m02:47:50.585765 [info ] [MainThread]: 
+[0m02:47:50.587092 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m02:47:50.594193 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m02:47:50.596211 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m02:47:50.597602 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:47:50.598370 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_service-desk-analytics-472019'
+[0m02:47:50.599295 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:47:50.602166 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:47:51.617812 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now list_service-desk-analytics-472019_raw_marts)
+[0m02:47:51.619530 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now list_service-desk-analytics-472019_raw_staging)
+[0m02:47:51.621864 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019, now list_service-desk-analytics-472019_raw_intermediate)
+[0m02:47:51.622802 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:47:51.625188 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:47:51.627424 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:47:52.655597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a3298e390>]}
+[0m02:47:52.658044 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m02:47:52.660631 [info ] [MainThread]: 
+[0m02:47:52.683247 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.dim_tempo
+[0m02:47:52.684620 [debug] [Thread-2 (]: Began running node model.service_desk_analytics.stg_chamados
+[0m02:47:52.686365 [info ] [Thread-1 (]: 1 of 8 START sql table model raw_marts.dim_tempo ............................... [RUN]
+[0m02:47:52.688676 [info ] [Thread-2 (]: 2 of 8 START sql view model raw_staging.stg_chamados ........................... [RUN]
+[0m02:47:52.691115 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_marts, now model.service_desk_analytics.dim_tempo)
+[0m02:47:52.693132 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_staging, now model.service_desk_analytics.stg_chamados)
+[0m02:47:52.696255 [debug] [Thread-1 (]: Began compiling node model.service_desk_analytics.dim_tempo
+[0m02:47:52.698261 [debug] [Thread-2 (]: Began compiling node model.service_desk_analytics.stg_chamados
+[0m02:47:52.713165 [debug] [Thread-1 (]: Writing injected SQL for node "model.service_desk_analytics.dim_tempo"
+[0m02:47:52.721446 [debug] [Thread-2 (]: Writing injected SQL for node "model.service_desk_analytics.stg_chamados"
+[0m02:47:52.726862 [debug] [Thread-2 (]: Began executing node model.service_desk_analytics.stg_chamados
+[0m02:47:52.728117 [debug] [Thread-1 (]: Began executing node model.service_desk_analytics.dim_tempo
+[0m02:47:52.767819 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:47:52.775701 [debug] [Thread-2 (]: Writing runtime sql for node "model.service_desk_analytics.stg_chamados"
+[0m02:47:52.812063 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m02:47:52.815886 [debug] [Thread-2 (]: On model.service_desk_analytics.stg_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.stg_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_staging`.`stg_chamados`
+  OPTIONS()
+  as 
+
+WITH raw_data AS (
+    SELECT * FROM `service-desk-analytics-472019`.`raw`.`chamados`
+),
+
+cleaned AS (
+    SELECT
+        -- IDs e Datas (validação básica)
+        id_chamado,
+        CAST(data_abertura AS TIMESTAMP) AS data_abertura,
+        CAST(data_fechamento AS TIMESTAMP) AS data_fechamento,
+        
+        -- Categorias (padronização)
+        UPPER(TRIM(categoria)) AS categoria,
+        INITCAP(TRIM(canal)) AS canal,
+        
+        -- Prioridade (tratamento de nulos e padronização)
+        CASE 
+            WHEN prioridade IS NULL THEN 'NÃO_INFORMADA'
+            ELSE INITCAP(TRIM(prioridade))
+        END AS prioridade,
+        
+        -- Status (validação)
+        CASE 
+            WHEN status IN ('Aberto', 'Em andamento', 'Fechado') THEN status
+            ELSE 'STATUS_DESCONHECIDO'
+        END AS status,
+        
+        -- Métricas numéricas (tratamento de outliers)
+        CAST(tempo_espera AS NUMERIC) AS tempo_espera_minutos,
+        CAST(tempo_resolucao AS NUMERIC) AS tempo_resolucao_horas,
+        
+        -- CSAT (valores válidos 1-5, nulos tratados)
+        CASE 
+            WHEN csat BETWEEN 1 AND 5 THEN csat
+            ELSE NULL
+        END AS csat_score,
+        
+        -- Flags booleanas (garantir consistência)
+        CAST(sla_atingido AS BOOLEAN) AS is_sla_atingido,
+        CAST(first_contact_resolution AS BOOLEAN) AS is_first_contact,
+        
+        -- Metadados para qualidade
+        CURRENT_TIMESTAMP() AS dbt_loaded_at
+
+    FROM raw_data
+)
+
+SELECT * FROM cleaned;
+
+
+[0m02:47:53.657777 [debug] [Thread-1 (]: Writing runtime sql for node "model.service_desk_analytics.dim_tempo"
+[0m02:47:53.662028 [debug] [Thread-1 (]: On model.service_desk_analytics.dim_tempo: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.dim_tempo"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`dim_tempo`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+WITH dates AS (
+    SELECT *
+    FROM unnest(generate_date_array('2020-01-01', current_date(), interval 1 day)) AS data
+)
+
+SELECT
+    row_number() OVER(ORDER BY data) AS id_tempo,
+    data,
+    EXTRACT(year FROM data) AS ano,
+    EXTRACT(quarter FROM data) AS trimestre,
+    EXTRACT(month FROM data) AS mes,
+    format_date('%Y-%m', data) AS ano_mes,
+    EXTRACT(day FROM data) AS dia,
+    EXTRACT(dayofweek FROM data) AS dia_semana,
+    CASE EXTRACT(dayofweek FROM data)
+        WHEN 1 THEN 'Domingo'
+        WHEN 2 THEN 'Segunda'
+        WHEN 3 THEN 'Terça'
+        WHEN 4 THEN 'Quarta'
+        WHEN 5 THEN 'Quinta'
+        WHEN 6 THEN 'Sexta'
+        WHEN 7 THEN 'Sábado'
+    END AS nome_dia_semana
+FROM dates
+    );
+  
+[0m02:47:53.902523 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:7a466d85-0c17-40e0-9b86-9a768ba55a75&page=queryresults
+[0m02:47:54.095918 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:eec34093-f770-4f1a-a9bf-55debebbc023&page=queryresults
+[0m02:47:54.507945 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a31f26450>]}
+[0m02:47:54.510607 [info ] [Thread-2 (]: 2 of 8 OK created sql view model raw_staging.stg_chamados ...................... [[32mCREATE VIEW (0 processed)[0m in 1.81s]
+[0m02:47:54.512878 [debug] [Thread-2 (]: Finished running node model.service_desk_analytics.stg_chamados
+[0m02:47:54.515881 [debug] [Thread-4 (]: Began running node model.service_desk_analytics.int_chamados
+[0m02:47:54.517765 [info ] [Thread-4 (]: 3 of 8 START sql view model raw_intermediate.int_chamados ...................... [RUN]
+[0m02:47:54.520551 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.service_desk_analytics.int_chamados'
+[0m02:47:54.522141 [debug] [Thread-4 (]: Began compiling node model.service_desk_analytics.int_chamados
+[0m02:47:54.533011 [debug] [Thread-4 (]: Writing injected SQL for node "model.service_desk_analytics.int_chamados"
+[0m02:47:54.538090 [debug] [Thread-4 (]: Began executing node model.service_desk_analytics.int_chamados
+[0m02:47:54.545307 [debug] [Thread-4 (]: Writing runtime sql for node "model.service_desk_analytics.int_chamados"
+[0m02:47:54.550482 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m02:47:54.553744 [debug] [Thread-4 (]: On model.service_desk_analytics.int_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.int_chamados"} */
+
+
+  create or replace view `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados`
+  OPTIONS()
+  as 
+
+SELECT
+    stg.id_chamado,
+    stg.data_abertura,
+    stg.data_fechamento,
+    date(stg.data_abertura) AS dt_abertura,
+    date(stg.data_fechamento) AS dt_fechamento,
+    stg.categoria,
+    stg.canal,
+    stg.prioridade,
+    stg.status,
+    stg.tempo_espera_minutos,
+    stg.tempo_resolucao_horas,
+    stg.csat_score,
+    stg.is_sla_atingido,
+    stg.is_first_contact
+FROM `service-desk-analytics-472019`.`raw_staging`.`stg_chamados` stg;
+
+
+[0m02:47:55.703098 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:3fc7e62e-8124-48a0-8d79-a59facb463b9&page=queryresults
+[0m02:47:56.314153 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a31f77810>]}
+[0m02:47:56.321117 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a31f30a90>]}
+[0m02:47:56.322560 [info ] [Thread-1 (]: 1 of 8 OK created sql table model raw_marts.dim_tempo .......................... [[32mCREATE TABLE (2.1k rows, 0 processed)[0m in 3.62s]
+[0m02:47:56.325949 [info ] [Thread-4 (]: 3 of 8 OK created sql view model raw_intermediate.int_chamados ................. [[32mCREATE VIEW (0 processed)[0m in 1.80s]
+[0m02:47:56.328579 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.dim_tempo
+[0m02:47:56.330419 [debug] [Thread-4 (]: Finished running node model.service_desk_analytics.int_chamados
+[0m02:47:56.335931 [debug] [Thread-2 (]: Began running node model.service_desk_analytics.dim_canal
+[0m02:47:56.337343 [debug] [Thread-3 (]: Began running node model.service_desk_analytics.dim_categoria
+[0m02:47:56.338739 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.dim_prioridade
+[0m02:47:56.339913 [debug] [Thread-4 (]: Began running node model.service_desk_analytics.dim_status
+[0m02:47:56.341017 [info ] [Thread-2 (]: 4 of 8 START sql table model raw_marts.dim_canal ............................... [RUN]
+[0m02:47:56.343027 [info ] [Thread-3 (]: 5 of 8 START sql table model raw_marts.dim_categoria ........................... [RUN]
+[0m02:47:56.345872 [info ] [Thread-1 (]: 6 of 8 START sql table model raw_marts.dim_prioridade .......................... [RUN]
+[0m02:47:56.347900 [info ] [Thread-4 (]: 7 of 8 START sql table model raw_marts.dim_status .............................. [RUN]
+[0m02:47:56.350326 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.service_desk_analytics.stg_chamados, now model.service_desk_analytics.dim_canal)
+[0m02:47:56.352068 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_service-desk-analytics-472019_raw_intermediate, now model.service_desk_analytics.dim_categoria)
+[0m02:47:56.353527 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.service_desk_analytics.dim_tempo, now model.service_desk_analytics.dim_prioridade)
+[0m02:47:56.355052 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.service_desk_analytics.int_chamados, now model.service_desk_analytics.dim_status)
+[0m02:47:56.356811 [debug] [Thread-2 (]: Began compiling node model.service_desk_analytics.dim_canal
+[0m02:47:56.358994 [debug] [Thread-3 (]: Began compiling node model.service_desk_analytics.dim_categoria
+[0m02:47:56.361591 [debug] [Thread-1 (]: Began compiling node model.service_desk_analytics.dim_prioridade
+[0m02:47:56.363171 [debug] [Thread-4 (]: Began compiling node model.service_desk_analytics.dim_status
+[0m02:47:56.375155 [debug] [Thread-2 (]: Writing injected SQL for node "model.service_desk_analytics.dim_canal"
+[0m02:47:56.381267 [debug] [Thread-3 (]: Writing injected SQL for node "model.service_desk_analytics.dim_categoria"
+[0m02:47:56.386932 [debug] [Thread-1 (]: Writing injected SQL for node "model.service_desk_analytics.dim_prioridade"
+[0m02:47:56.391597 [debug] [Thread-4 (]: Writing injected SQL for node "model.service_desk_analytics.dim_status"
+[0m02:47:56.394912 [debug] [Thread-2 (]: Began executing node model.service_desk_analytics.dim_canal
+[0m02:47:56.395925 [debug] [Thread-3 (]: Began executing node model.service_desk_analytics.dim_categoria
+[0m02:47:56.399002 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m02:47:56.399958 [debug] [Thread-1 (]: Began executing node model.service_desk_analytics.dim_prioridade
+[0m02:47:56.400389 [debug] [Thread-4 (]: Began executing node model.service_desk_analytics.dim_status
+[0m02:47:56.402770 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m02:47:56.408277 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:47:56.444545 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m02:47:57.298964 [debug] [Thread-2 (]: Writing runtime sql for node "model.service_desk_analytics.dim_canal"
+[0m02:47:57.305498 [debug] [Thread-2 (]: On model.service_desk_analytics.dim_canal: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.dim_canal"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`dim_canal`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+    row_number() OVER(ORDER BY canal) AS id_canal,
+    canal
+FROM (
+    SELECT DISTINCT canal FROM `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados`
+) t
+    );
+  
+[0m02:47:57.341029 [debug] [Thread-3 (]: Writing runtime sql for node "model.service_desk_analytics.dim_categoria"
+[0m02:47:57.346531 [debug] [Thread-3 (]: On model.service_desk_analytics.dim_categoria: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.dim_categoria"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`dim_categoria`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select
+    row_number() over(order by categoria) as id_categoria,
+    categoria
+from (
+    select distinct categoria from `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados`
+) t
+    );
+  
+[0m02:47:57.362265 [debug] [Thread-4 (]: Writing runtime sql for node "model.service_desk_analytics.dim_status"
+[0m02:47:57.367890 [debug] [Thread-4 (]: On model.service_desk_analytics.dim_status: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.dim_status"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`dim_status`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+    row_number() OVER(ORDER BY status) AS id_status,
+    status
+FROM (
+    SELECT DISTINCT status FROM `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados`
+) t
+    );
+  
+[0m02:47:57.392729 [debug] [Thread-1 (]: Writing runtime sql for node "model.service_desk_analytics.dim_prioridade"
+[0m02:47:57.396865 [debug] [Thread-1 (]: On model.service_desk_analytics.dim_prioridade: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.dim_prioridade"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`dim_prioridade`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+    row_number() OVER(ORDER BY prioridade) AS id_prioridade,
+    prioridade
+FROM (
+    SELECT DISTINCT prioridade FROM `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados`
+) t
+    );
+  
+[0m02:47:58.059491 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:a091231d-12b0-4a0d-8128-b9be3af5127b&page=queryresults
+[0m02:47:58.061032 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:79333f10-4e8f-406c-ab67-1afaaa30cf61&page=queryresults
+[0m02:47:58.062690 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:7b68585e-c816-4140-8bf7-07e1b7e70988&page=queryresults
+[0m02:47:58.064126 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:9b9af422-e943-4bf2-b026-23f0a1aaac35&page=queryresults
+[0m02:48:00.245421 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a323ec490>]}
+[0m02:48:00.240610 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a31fee750>]}
+[0m02:48:00.249190 [info ] [Thread-1 (]: 6 of 8 OK created sql table model raw_marts.dim_prioridade ..................... [[32mCREATE TABLE (5.0 rows, 4.3 KiB processed)[0m in 3.89s]
+[0m02:48:00.251866 [info ] [Thread-4 (]: 7 of 8 OK created sql table model raw_marts.dim_status ......................... [[32mCREATE TABLE (3.0 rows, 6.0 KiB processed)[0m in 3.89s]
+[0m02:48:00.255422 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.dim_prioridade
+[0m02:48:00.257605 [debug] [Thread-4 (]: Finished running node model.service_desk_analytics.dim_status
+[0m02:48:00.278863 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a31b031d0>]}
+[0m02:48:00.280879 [info ] [Thread-2 (]: 4 of 8 OK created sql table model raw_marts.dim_canal .......................... [[32mCREATE TABLE (4.0 rows, 5.3 KiB processed)[0m in 3.93s]
+[0m02:48:00.283536 [debug] [Thread-2 (]: Finished running node model.service_desk_analytics.dim_canal
+[0m02:48:00.382740 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a31fe5210>]}
+[0m02:48:00.385813 [info ] [Thread-3 (]: 5 of 8 OK created sql table model raw_marts.dim_categoria ...................... [[32mCREATE TABLE (4.0 rows, 6.0 KiB processed)[0m in 4.03s]
+[0m02:48:00.388821 [debug] [Thread-3 (]: Finished running node model.service_desk_analytics.dim_categoria
+[0m02:48:00.392464 [debug] [Thread-1 (]: Began running node model.service_desk_analytics.fato_chamados
+[0m02:48:00.395018 [info ] [Thread-1 (]: 8 of 8 START sql table model raw_marts.fato_chamados ........................... [RUN]
+[0m02:48:00.398701 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.service_desk_analytics.dim_prioridade, now model.service_desk_analytics.fato_chamados)
+[0m02:48:00.401378 [debug] [Thread-1 (]: Began compiling node model.service_desk_analytics.fato_chamados
+[0m02:48:00.412845 [debug] [Thread-1 (]: Writing injected SQL for node "model.service_desk_analytics.fato_chamados"
+[0m02:48:00.416933 [debug] [Thread-1 (]: Began executing node model.service_desk_analytics.fato_chamados
+[0m02:48:00.431612 [debug] [Thread-1 (]: Writing runtime sql for node "model.service_desk_analytics.fato_chamados"
+[0m02:48:00.435463 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:48:00.441870 [debug] [Thread-1 (]: On model.service_desk_analytics.fato_chamados: /* {"app": "dbt", "dbt_version": "1.8.0", "profile_name": "service_desk_analytics", "target_name": "prod", "node_id": "model.service_desk_analytics.fato_chamados"} */
+
+  
+    
+
+    create or replace table `service-desk-analytics-472019`.`raw_marts`.`fato_chamados`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with base as (
+    select
+        int.id_chamado,
+        t_ab.id_tempo as id_tempo_abertura,
+        t_fc.id_tempo as id_tempo_fechamento,
+        dcat.id_categoria,
+        dcan.id_canal,
+        dpri.id_prioridade,
+        dsta.id_status,
+        int.tempo_espera_minutos,
+        int.tempo_resolucao_horas,
+        int.csat_score as pontuacao_csat,
+        int.is_sla_atingido as sla_atingido,
+        int.is_first_contact as resolvido_primeiro_contato
+    from `service-desk-analytics-472019`.`raw_intermediate`.`int_chamados` int
+    left join `service-desk-analytics-472019`.`raw_marts`.`dim_tempo` t_ab
+        on int.dt_abertura = t_ab.data
+    left join `service-desk-analytics-472019`.`raw_marts`.`dim_tempo` t_fc
+        on int.dt_fechamento = t_fc.data
+    left join `service-desk-analytics-472019`.`raw_marts`.`dim_categoria` dcat
+        on int.categoria = dcat.categoria
+    left join `service-desk-analytics-472019`.`raw_marts`.`dim_canal` dcan
+        on int.canal = dcan.canal
+    left join `service-desk-analytics-472019`.`raw_marts`.`dim_prioridade` dpri
+        on int.prioridade = dpri.prioridade
+    left join `service-desk-analytics-472019`.`raw_marts`.`dim_status` dsta
+        on int.status = dsta.status
+)
+
+select * from base
+    );
+  
+[0m02:48:01.735752 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=service-desk-analytics-472019&j=bq:us-central1:9c6c223c-db3f-4daa-99a3-10ba8920ddc2&page=queryresults
+[0m02:48:04.144871 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22b72729-df60-4e36-a9ed-439e3cbba696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a31b0f810>]}
+[0m02:48:04.147652 [info ] [Thread-1 (]: 8 of 8 OK created sql table model raw_marts.fato_chamados ...................... [[32mCREATE TABLE (600.0 rows, 106.9 KiB processed)[0m in 3.75s]
+[0m02:48:04.150022 [debug] [Thread-1 (]: Finished running node model.service_desk_analytics.fato_chamados
+[0m02:48:04.157004 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:48:04.158627 [debug] [MainThread]: Connection 'model.service_desk_analytics.fato_chamados' was properly closed.
+[0m02:48:04.219843 [debug] [MainThread]: Connection 'model.service_desk_analytics.dim_canal' was properly closed.
+[0m02:48:04.221065 [debug] [MainThread]: Connection 'model.service_desk_analytics.dim_categoria' was properly closed.
+[0m02:48:04.221849 [debug] [MainThread]: Connection 'model.service_desk_analytics.dim_status' was properly closed.
+[0m02:48:04.222899 [info ] [MainThread]: 
+[0m02:48:04.228507 [info ] [MainThread]: Finished running 2 view models, 6 table models in 0 hours 0 minutes and 13.64 seconds (13.64s).
+[0m02:48:04.233830 [debug] [MainThread]: Command end result
+[0m02:48:04.292710 [info ] [MainThread]: 
+[0m02:48:04.293982 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m02:48:04.295322 [info ] [MainThread]: 
+[0m02:48:04.296517 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m02:48:04.298309 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 15.457889, "process_user_time": 5.027719, "process_kernel_time": 1.293882, "process_mem_max_rss": "212264", "process_out_blocks": "4545", "process_in_blocks": "0"}
+[0m02:48:04.299325 [debug] [MainThread]: Command `dbt run` succeeded at 02:48:04.299157 after 15.46 seconds
+[0m02:48:04.300319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a5516a1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a55bb1f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a58544c90>]}
+[0m02:48:04.301396 [debug] [MainThread]: Flushing usage events
